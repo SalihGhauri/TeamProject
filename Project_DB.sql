@@ -44,7 +44,8 @@ CREATE TABLE ProductStock (
 
 CREATE TABLE Category(
     category_ID INT, 
-    cName VARCHAR(100) NOT NULL
+    sport ENUM('Football', 'Rugby', 'Volleyball', 'Golf', 'Basketball') NOT NULL,
+    type ENUM('Men', 'Women', 'Accessories') NOT NULL
 );
 
 CREATE TABLE Basket(
