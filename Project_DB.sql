@@ -43,7 +43,8 @@ CREATE TABLE ProductStock (
 );
 
 CREATE TABLE Category(
-
+    category_ID INT, 
+    cName VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Basket(
