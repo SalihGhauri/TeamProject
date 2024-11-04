@@ -31,5 +31,14 @@ CREATE TABLE Products{
     
 }
 
+CREATE TABLE ProductStock (
+    stock_ID INT PRIMARY KEY AUTO_INCREMENT,
+    productId INT NOT NULL,                                 
+    size ENUM('XS', 'S', 'M', 'L', 'XL', 'XXL') NOT NULL,
+    quantity INT NOT NULL DEFAULT 0,
+    FOREIGN KEY (productId) REFERENCES Products(product_ID),
+    UNIQUE KEY unique_product_size (productId, size)
+);
+
 CREATE TABLE Category
 
