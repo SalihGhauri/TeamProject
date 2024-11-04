@@ -43,7 +43,7 @@ CREATE TABLE ProductStock (
 );
 
 CREATE TABLE Category(
-    category_ID INT, 
+    category_ID INT PRIMARY KEY, 
     sport ENUM('Football', 'Rugby', 'Volleyball', 'Golf', 'Basketball') NOT NULL,
     type ENUM('Men', 'Women', 'Accessories') NOT NULL
 );
@@ -51,7 +51,8 @@ CREATE TABLE Category(
 CREATE TABLE Basket(
     basket_id Int PRIMARY KEY,
     item_Count Int,
-    subTotal Float
+    subTotal Float,
+    product_ID INT
 );
 
 
