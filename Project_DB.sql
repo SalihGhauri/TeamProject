@@ -1,5 +1,5 @@
 CREATE TABLE Users(
-    User_ID Int Primary Key,
+    User_ID Int PRIMARY KEY,
     firstName Text,
     surName Text,
     email Varchar(100),
@@ -10,7 +10,7 @@ CREATE TABLE Users(
 );
 
 CREATE TABLE Address(
-    address_ID Int,
+    address_ID Int PRIMARY KEY,
     postCode Varchar(100),
     houseNum Varchar(100),
     streetName Text,
@@ -19,15 +19,18 @@ CREATE TABLE Address(
 );
 
 CREATE TABLE Orders(
-    order_ID Int,
+    order_ID Int PRIMARY KEY,
     status Enum('Pending','Accepted','Delivered'),
     subTotal Float,
     orderDate Date
 );
 
 CREATE TABLE Products(
-    product_ID Int,
-    pName Text
+    product_ID Int PRIMARY KEY,
+    pName Text,
+    description Varchar(255),
+    price Float,
+    category_ID int
 );
 
 CREATE TABLE ProductStock (
@@ -41,6 +44,12 @@ CREATE TABLE ProductStock (
 
 CREATE TABLE Category(
 
+);
+
+CREATE TABLE Basket(
+    basket_id Int PRIMARY KEY,
+    item_Count Int,
+    subTotal Float
 );
 
 
