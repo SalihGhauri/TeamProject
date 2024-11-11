@@ -1,0 +1,171 @@
+
+
+
+
+/* -----------------MAIN STYLE FOR ALL PAGES----------------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    color: black;
+
+}
+html{
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+
+/* -----------------FIRST PAGE CSS STYLING ----------------*/
+#main_header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size:900px 540px;
+    background-repeat: no-repeat;
+    background-position: 120% 120%;
+}
+.container{
+    padding: 40px 0.5% ;
+}
+
+/*-------------- NAV BAR ------------ */
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position:relative;
+    left: 430px;
+    
+    
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #670202;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.8s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+   
+}
+
+.content{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.content h1{
+    font-weight: 800;
+    color:black  ;
+    margin-top: 19%;
+    font-size: 80px;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+   }
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px 25px 30px;
+    
+
+}
+
+.search_basket_user{
+    display: flex;
+    align-items: center;
+    
+
+}
+.search{
+    width:200px;
+    height: 40px;
+    background-color: #F5F5F5;
+    padding: 5px 3px;
+    border-radius: 20px;
+
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    left: 40px;
+    bottom: 25px;
+    font-weight: 500;
+    
+}
+
+.icon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+/* --------------- TEXT SLIDER ------------*/
+.text_slider {
+    width: 100%;
+    height: 8vh;
+    background-color: #af1212;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.text_slider h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    margin-top:10px ;
+}
+
+
+
+/*----------------- HOME PAGE WRITING ===============*/
+
+.contents {
+    margin: 40px 30px;
+    align-items: center;
+   
+}
+
+.contents h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 200;
+
+}
+
+.contents h4{
+    
+}
+
