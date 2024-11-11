@@ -1,132 +1,15 @@
-
-
-
-
-/* -----------------MAIN STYLE FOR ALL PAGES----------------- */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: montserrat, sans-serif;
-    box-sizing: border-box;
-}
-body{
-    background: white;
-    color: black;
-
-}
-html{
-    scroll-behavior: smooth;
-    transition: 0.3s;
-}
-
-
 /* -----------------FIRST PAGE CSS STYLING ----------------*/
-#main_header{
+#main_header {
     width: 100%;
     height: 100vh;
     background-image: url("/TeamProject/Images/background.png");
-    background-size:900px 540px;
+    background-size: 900px 540px;
     background-repeat: no-repeat;
     background-position: 120% 120%;
 }
-.container{
-    padding: 40px 0.5% ;
-}
 
-/*-------------- NAV BAR ------------ */
-nav{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 5px 10px;
-}
-nav ul li a{
-    color:black;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    position:relative;
-    left: 430px;
-    
-    
-}
-
-nav ul li a::after{
-    content: "";
-    width: 0;
-    height: 3px;
-    background: #670202;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.8s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-   
-}
-
-.content{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.content h1{
-    font-weight: 800;
-    color:black  ;
-    margin-top: 19%;
-    font-size: 80px;
-    align-items: center;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-   }
-.logo {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin: 0px 0px 25px 30px;
-    
-
-}
-
-.search_basket_user{
-    display: flex;
-    align-items: center;
-    
-
-}
-.search{
-    width:200px;
-    height: 40px;
-    background-color: #F5F5F5;
-    padding: 5px 3px;
-    border-radius: 20px;
-
-}
-
-.searchInput{
-    border: none;
-    background-color: transparent;
-    position: relative;
-    left: 40px;
-    bottom: 25px;
-    font-weight: 500;
-    
-}
-
-.icon{
-    position: relative;
-    width: 30px;
-    height: 30px;
+.container {
+    padding: 40px 0.5%;
 }
 
 /* --------------- TEXT SLIDER ------------*/
@@ -140,46 +23,42 @@ img {
 
 }
 
-.text_slider h3{
+.text_slider h3 {
     text-align: center;
     font-weight: 400;
     font-size: 20px;
     color: white;
-    margin-top:10px ;
+    margin-top: 10px;
 }
-
-
 
 /*----------------- HOME PAGE WRITING ===============*/
 
 .contents {
     margin: 40px 30px;
     align-items: center;
-   
+
 }
 
-.contents h2{
+.contents h2 {
     color: black;
     font-size: 50px;
     font-weight: 200;
 
 }
 
-.contents h4{
-    
-}
+.contents h4 {}
 
 /*----------------- SECTION 2 -------------*/
-.section-2-container{
+.section-2-container {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f4f4f9;
-        font-family: "Inter", sans-serif;
-        overflow: hidden;
-        font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+    font-weight: 400;
 }
 
 .carousel-wrapper {
@@ -190,8 +69,7 @@ img {
 }
 
 /* Left Side Links */
-.site_links_label
-{
+.site_links_label {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -207,7 +85,7 @@ img {
     margin-top: 10px;
     list-style: none;
     padding: 0;
-    
+
 }
 
 .links-container li {
@@ -221,23 +99,22 @@ img {
     font-weight: 500;
 }
 
-.links-container li span
-{
+.links-container li span {
     position: relative;
     font-weight: bold;
 }
 
-.links-container li:hover span::after, .links-container li.active span::after
-{
+.links-container li:hover span::after,
+.links-container li.active span::after {
     content: "";
-position: absolute;
-right: -25px;
-width: 20px;
-height: 20px;
-background-size: contain;
-top: 50%;
-transform: translateY(-50%);
-display: block;
+    position: absolute;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
     background-image: url('data:image/svg+xml,<svg width="20px" height="" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z" fill="%23af1212"/></svg>');
 }
 
@@ -282,7 +159,7 @@ display: block;
 }
 
 .carousel-image.right {
-   
+
     transform: scale(0.7) translateX(200px) rotateY(-45deg);
     z-index: 5;
 }
@@ -294,9 +171,7 @@ display: block;
 }
 
 .carousel-image.right-2 {
-  
+
     transform: scale(0.6) translateX(400px) rotateY(-60deg);
     z-index: 3;
 }
-
-
