@@ -46,7 +46,7 @@
 
 }
 
-.contents h4 {}
+/*.contents h4 {} - Not sure if you want to add code to this hence why I have commented it - Salih 
 
 /*----------------- SECTION 2 -------------*/
 .section-2-container {
@@ -56,7 +56,7 @@
     height: 100vh;
     margin: 0;
     background-color: #f4f4f9;
-    font-family: "Inter", sans-serif;
+    font-family: montserrat, sans-serif;
     overflow: hidden;
     font-weight: 400;
 }
@@ -64,7 +64,7 @@
 .carousel-wrapper {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
 }
 
