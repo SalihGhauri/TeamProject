@@ -2,7 +2,7 @@
 #main_header {
     width: 100%;
     height: 100vh;
-    background-image: url("/TeamProject/Images/background.png");
+    background-image: url("C:\Users\Aston\OneDrive\Desktop\team project-1\TeamProject\Images\background.png");
     background-size: 900px 540px;
     background-repeat: no-repeat;
     background-position: 120% 120%;
@@ -25,26 +25,68 @@
 
 .text_slider h3 {
     text-align: center;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 20px;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-/*----------------- HOME PAGE WRITING ===============*/
+.text_slider p a{
+    color: white;
+    text-decoration: underline;
+}
+
+/*----------------- HOME PAGE content ===============*/
 
 .contents {
-    margin: 40px 30px;
+    margin: 70px 30px;
     align-items: center;
 
 }
 
 .contents h2 {
     color: black;
-    font-size: 50px;
-    font-weight: 200;
+    font-size: 45px;
+    font-weight: 100;
 
 }
+
+.contents h3{
+color: #000;
+font-size: 20px;
+font-weight: 300;
+}
+
+.contents .shop_now{
+    text-decoration: none;
+}
+
+
+.contents .shop_now a {
+    font-weight: 500;
+    text-decoration: none !important;
+    text-align: center;
+    color:black;
+    padding: 10px 15px 10px 15px;
+    background: #E9E9E9;
+    font-size: 15px;
+    text-align: center;
+    border: 1.5px solid #545454;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.contents .shop_now:hover {
+    border: 1.5px solid black;
+    background: #E9E9E9;
+    color: black;
+    font-weight: 200;
+  }
+
+
+
 
 /*.contents h4 {} - Not sure if you want to add code to this hence why I have commented it - Salih 
 
