@@ -133,7 +133,7 @@ font-weight: 300;
 .links-container li {
 
     display: block;
-    font-size: 40px;
+    font-size: 45px;
     margin: 10px 0;
     cursor: pointer;
     color: #000;
@@ -169,7 +169,6 @@ font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
     perspective: 1000px;
     width: 80%;
     max-width: 800px;
