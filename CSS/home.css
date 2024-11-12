@@ -127,11 +127,9 @@ font-weight: 300;
     margin-top: 10px;
     list-style: none;
     padding: 0;
-
 }
 
 .links-container li {
-
     display: block;
     font-size: 45px;
     margin: 10px 0;
@@ -146,8 +144,7 @@ font-weight: 300;
     font-weight: bold;
 }
 
-.links-container li:hover span::after,
-.links-container li.active span::after {
+.links-container li span::after {
     content: "";
     position: absolute;
     right: -25px;
@@ -157,6 +154,11 @@ font-weight: 300;
     top: 50%;
     transform: translateY(-50%);
     display: block;
+    background-image: url('data:image/svg+xml,<svg width="20px" height="" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z" fill="%23000000"/></svg>');
+}
+
+.links-container li:hover span::after,
+.links-container li.active span::after {
     background-image: url('data:image/svg+xml,<svg width="20px" height="" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z" fill="%23af1212"/></svg>');
 }
 
@@ -200,7 +202,6 @@ font-weight: 300;
 }
 
 .carousel-image.right {
-
     transform: scale(0.7) translateX(200px) rotateY(-45deg);
     z-index: 5;
 }
@@ -212,7 +213,6 @@ font-weight: 300;
 }
 
 .carousel-image.right-2 {
-
     transform: scale(0.6) translateX(400px) rotateY(-60deg);
     z-index: 3;
 }
