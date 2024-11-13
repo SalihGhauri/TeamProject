@@ -216,3 +216,8 @@ font-weight: 300;
     transform: scale(0.6) translateX(400px) rotateY(-60deg);
     z-index: 3;
 }
+
+.about-us h5{
+    padding-left: 70px;
+    font-size: 40px;
+}
