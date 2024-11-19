@@ -55,5 +55,15 @@ CREATE TABLE Basket(
     product_ID INT
 );
 
+CREATE TABLE Basket_Items (
+    basket_item_id INT PRIMARY KEY,
+    basket_id INT NOT NULL,
+    product_ID INT NOT NULL,
+    FOREIGN KEY (basket_id) REFERENCES Basket(basket_id),
+    FOREIGN KEY (product_ID) REFERENCES Products(product_ID),
+    INDEX (basket_id),
+    INDEX (product_ID)
+);
+
 
 ALTER TABLE Products ADD INDEX(product_ID);
