@@ -18,25 +18,66 @@
     height: 8vh;
     background-color: #af1212;
     margin-top: 20px;
-    text-align: center;
-    align-items: center;
-
-}
-
-.text_slider h3 {
-    text-align: center;
-    font-weight: 100;
-    font-size: 20px;
-    color: white;
-    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.text_slider p a{
+.text_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_wrapper h3 {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 1s ease;
+    line-height: 8vh;
+}
+
+.text_wrapper h3 a {
+    font-weight: bold;
     color: white;
     text-decoration: underline;
 }
+
+.text_wrapper h3:nth-child(1) {
+    animation: slideInOut 10s infinite;
+}
+
+.text_wrapper h3:nth-child(2) {
+    animation: slideInOut 10s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    15%, 45% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    55%, 100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+
 
 /*----------------- HOME PAGE content ===============*/
 
