@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +26,8 @@ body {
 
 .logo {
     max-width: 200px;
-    height: auto; 
-    margin-bottom: 10px; 
+    height: auto;
+    margin-bottom: 10px;
 }
 
 
@@ -51,7 +50,9 @@ form {
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
+    color: #888;
 }
+
 
 .input-field::placeholder {
     color: #888;
