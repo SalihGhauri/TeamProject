@@ -70,5 +70,17 @@ CREATE TABLE Returns(
     returndate Date
 );
 
+CREATE TABLE Review(
+    review_ID Int PRIMARY KEY,
+    user_ID Int,
+    product_ID Int,
+    rating ENUM('1', '2', '3', '4', '5') NOT NULL
+);
+
+CREATE TABLE Discount(
+    discount_ID Int PRIMARY KEY,
+    amount Int
+);
+
 
 ALTER TABLE Products ADD INDEX(product_ID);
