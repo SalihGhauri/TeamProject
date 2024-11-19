@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -11,24 +12,29 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
+    padding: 20px;
+    overflow: visible;
 }
 
 .login-container {
     text-align: center;
     max-width: 400px;
     width: 100%;
-    padding: 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    overflow: visible;
 }
 
 .logo {
-    width: 200px;
-    margin-bottom: 10px;
+    max-width: 200px;
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
+
 .title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 0;
     margin-bottom: 20px;
 }
 
@@ -38,18 +44,17 @@ form {
     gap: 15px;
 }
 
-input[type="First Name"],
-input[type="Last Name"],
-input[type="Date Of Birth"],
-input[type="Email Address"],
-input[type="Password"],
-input[type="Confirm Password"] {
+.input-field {
     width: 100%;
     padding: 15px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
+}
+
+.input-field::placeholder {
+    color: #888;
 }
 
 .password-field {
@@ -66,7 +71,23 @@ input[type="Confirm Password"] {
     color: #888;
 }
 
-.Submit-button {
+.checkbox-container {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.checkbox-container a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.login-button {
     width: 100%;
     padding: 15px;
     font-size: 16px;
@@ -76,5 +97,16 @@ input[type="Confirm Password"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
 
+.login-link {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #888;
+}
+
+.login-link a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
 }
