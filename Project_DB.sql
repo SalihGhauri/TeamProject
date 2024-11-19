@@ -25,6 +25,14 @@ CREATE TABLE Orders(
     orderDate Date
 );
 
+CREATE TABLE Order_items(
+    order_itemID Int PRIMARY KEY,
+    order_ID Int,
+    product_ID Int,
+    quantity Int,
+    price Int
+);
+
 CREATE TABLE Products(
     product_ID Int PRIMARY KEY,
     pName Text,
@@ -53,6 +61,25 @@ CREATE TABLE Basket(
     item_Count Int,
     subTotal Float,
     product_ID INT
+);
+
+CREATE TABLE Returns(
+    return_id Int PRIMARY KEY,
+    order_itemID Int,
+    reason Varchar(255),
+    returndate Date
+);
+
+CREATE TABLE Review(
+    review_ID Int PRIMARY KEY,
+    user_ID Int,
+    product_ID Int,
+    rating ENUM('1', '2', '3', '4', '5') NOT NULL
+);
+
+CREATE TABLE Discount(
+    discount_ID Int PRIMARY KEY,
+    amount Int
 );
 
 
