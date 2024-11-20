@@ -67,11 +67,15 @@
         opacity: 0;
         transform: translateX(100%);
     }
-    15%, 45% {
+
+    15%,
+    45% {
         opacity: 1;
         transform: translateX(0);
     }
-    55%, 100% {
+
+    55%,
+    100% {
         opacity: 0;
         transform: translateX(-100%);
     }
@@ -94,13 +98,13 @@
 
 }
 
-.contents h3{
-color: #000;
-font-size: 20px;
-font-weight: 300;
+.contents h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
 }
 
-.contents .shop_now{
+.contents .shop_now {
     text-decoration: none;
 }
 
@@ -109,7 +113,7 @@ font-weight: 300;
     font-weight: 500;
     text-decoration: none !important;
     text-align: center;
-    color:black;
+    color: black;
     padding: 10px 15px 10px 15px;
     background: #E9E9E9;
     font-size: 15px;
@@ -124,7 +128,7 @@ font-weight: 300;
     background: #E9E9E9;
     color: black;
     font-weight: 200;
-  }
+}
 
 
 
@@ -258,7 +262,7 @@ font-weight: 300;
     z-index: 3;
 }
 
-.about-us h5{
+.about-us h5 {
     padding-left: 70px;
     font-size: 40px;
 }
