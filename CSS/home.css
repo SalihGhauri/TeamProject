@@ -262,7 +262,33 @@
     z-index: 3;
 }
 
+
+/* about us Container */
+
 .about-us h5 {
     padding-left: 70px;
     font-size: 40px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    justify-content: center;
+    perspective: 1000px;
+    height: 300px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
