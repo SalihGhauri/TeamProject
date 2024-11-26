@@ -69,7 +69,44 @@ const initSlider = () => {
 // Initialize the slider functionality
 initSlider();
 
+//get the navigation buttons
+const prevButton = document.querySelector('.pre-btn');
+const nextButton = document.querySelector('.next-btn');
 
+//get the discount list and its items
+const discountList = document.querySelector('.discount-list');
+const discountCards = document.querySelectorAll('.discount-card');
+
+//set number of visible discounts
+const visibleCards = 3;
+let currentIndex = 0;
+
+//function to update the display of the cards
+function updateDisplay(){
+    const maxIndex = discountCards.length - visibleCards;
+    if (currentIndex<0) currentIndex = 0;
+    if (currentIndex> maxIndex) currentIndex = maxIndex;
+
+    discountList.style.transform = `translateX(-${currentIndex * (discountCards[0].offsetWidth + 20)}px)`;
+
+}
+
+prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+    }
+    updateDisplay();
+});
+
+nextButton.addEventListener('click', () => {
+    const maxIndex = discountCards.length - visibleCards;
+    if (currentIndex < maxIndex) {
+        currentIndex++;
+    }
+    updateDisplay();
+});
+
+updateDisplay();
 
 
 
