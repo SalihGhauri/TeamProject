@@ -94,3 +94,6 @@ CREATE TABLE Basket_Items (
 
 
 ALTER TABLE Products ADD INDEX(product_ID);
+ALTER TABLE Users ADD INDEX(address_ID);
+
+ALTER TABLE Orders ADD INDEX(order_ID);
