@@ -1,0 +1,52 @@
+.filter_container {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filter_header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter_category {
+    margin: 10px 0;
+}
+
+.filter_toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter_toggle .plus_icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.toggle_checkbox {
+    display: none;
+}
+
+.toggle_checkbox:checked+.plus_icon {
+    transform: rotate(45deg);
+}
+
+.toggle_checkbox:checked~.filter_options {
+    display: block;
+}
+
+.filter_options {
+    display: none;
+    margin-top: 10px;
+}
+
+.filter_options label {
+    display: block;
+    margin: 5px 0;
+}
