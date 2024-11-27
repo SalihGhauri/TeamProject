@@ -34,6 +34,7 @@ details input {
     margin-right: 8px;
 }
 
-label {
-    cursor: pointer;
+.filter_options label {
+    display: block;
+    margin: 5px 0;
 }
