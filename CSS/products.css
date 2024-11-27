@@ -37,4 +37,79 @@ details input {
 .filter_options label {
     display: block;
     margin: 5px 0;
+
 }
+
+
+/*  =============== PRODUCTS CONTAINER =================*/
+
+.products_container{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+
+}
+
+.products_container .item{
+
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:none;
+    cursor: pointer;
+    margin: 15px 0;
+    position: relative;
+
+}
+
+.products_container .item img{
+    width: 100%;
+}
+
+.products_container .item .text{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.products_container .item .text span{
+    font-size: 13px;
+    color: #545454;
+}
+
+.products_container .item .text h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+
+}
+
+.products_container .item .text i{
+    font-size: 12px;
+    position: absolute;
+}
+
+.products_container .item .text h4{
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.products_container .item .heart{
+    width: 30px;
+    height:30px;
+    padding: 7px;
+    line-height: 30px 30px;
+    border-radius: 50px;
+    background-color: #f4f4f9;
+    font-weight: 800;
+    color: black;
+    border-color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    ;
+}
+
