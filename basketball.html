@@ -62,11 +62,56 @@
                                 <input type="radio" id="shoes" name="clothing" onclick="redirectToCategory('shoes')">
                                 <label for="shoes">Shoes</label>
                             </li>
-
                         </ul>
                     </details>
-
-
+                </div>
+                <!-- New Size Filter -->
+                <div class="size">
+                    <details>
+                        <summary>Size</summary>
+                        <ul>
+                            <li>
+                                <input type="radio" id="xs" name="size" onclick="redirectToSize('XS')">
+                                <label for="xs">XS</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="s" name="size" onclick="redirectToSize('S')">
+                                <label for="s">S</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="m" name="size" onclick="redirectToSize('M')">
+                                <label for="m">M</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="l" name="size" onclick="redirectToSize('L')">
+                                <label for="l">L</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="xl" name="size" onclick="redirectToSize('XL')">
+                                <label for="xl">XL</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- New Price Filter -->
+                <div class="price">
+                    <details>
+                        <summary>Price</summary>
+                        <ul>
+                            <li>
+                                <input type="radio" id="price1" name="price" onclick="redirectToPrice('0-20')">
+                                <label for="price1">£0-£20</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="price2" name="price" onclick="redirectToPrice('20-40')">
+                                <label for="price2">£20-£40</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="price3" name="price" onclick="redirectToPrice('40-60')">
+                                <label for="price3">£40-£60</label>
+                            </li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
@@ -155,7 +200,7 @@
             </div>
         </div>
     </main>
-    <script src="JAVASCRIPT/filter.js"></script>
+    <script src="JAVASCRIPT/basketball_filter.js"></script>
 </body>
 
 </html>
