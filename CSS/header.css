@@ -1,4 +1,111 @@
 /*-------------- NAV BAR ------------ */
+
+.header_container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    width: 100%;
+    height: 100px;
+   
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+  
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    align-items: center;
+  
+    
+    
+}
+
+nav   ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #670202;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.8s;
+}
+ nav  ul li a:hover::after{
+    width: 100%;
+   
+}
+
+.search_basket_user{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 170px;
+    
+   
+    
+
+}
+.search{
+    width:200px;
+    height: 40px;
+    background-color: #F5F5F5;
+    padding: 5px 3px;
+    border-radius: 20px;
+
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    left: 40px;
+    bottom: 25px;
+    font-weight: 500;
+    
+}
+
+.icon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 nav{
     display:flex;
     align-items: center;
@@ -34,20 +141,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
    
-}
-
-.content{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.content h1{
-    font-weight: 800;
-    color:black  ;
-    margin-top: 19%;
-    font-size: 80px;
-    align-items: center;
-    text-align: center;
 }
 
 img {
@@ -96,4 +189,4 @@ img {
     height: 30px;
 }
 
-
+*/
