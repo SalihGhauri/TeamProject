@@ -1,0 +1,95 @@
+
+
+body{
+    background: #af1212;
+    font-size: 14px;
+    font-family: montserrat, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 100px;
+}
+
+.contact-box{
+    background: #fff;
+    display: flex;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.2);
+    transform: translateY(-5px);
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+}
+
+.contact-left{
+    padding: 40px 60px;
+    flex-basis: 40%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    padding:40px;
+    background:#3a3a3a;
+    color: #fff;
+    border-radius: 0;
+}
+
+h1{
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.container p{
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    width: 100%;
+}
+
+input{
+    width: 70%;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solic #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+button{
+    background: #af1212;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3{
+    color: #af1212;
+    margin-bottom: 10px;
+}
+
+label{
+    color: #af1212;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+body p{
+    margin: 5px;
+}
