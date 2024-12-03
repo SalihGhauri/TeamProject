@@ -1,14 +1,5 @@
 <?php
-//connect to db credentials
-$dbname = "cs2team10_db";
-$dbhost = "localhost";
-$username = "cs2team10";
-$password = "3WqYX34Scob8B1n";
-
-try{
-//connects to database
-	$conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $username, $password);
- 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once 'connectDB.php';
 
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];

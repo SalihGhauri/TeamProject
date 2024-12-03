@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+
+    <!-- CSS Linksheets -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/Footer.css">
+    <link rel="stylesheet" href="CSS/products.css">
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+
+<body>
+    <main>
+        <!-- TOP MAIN NAV BAR -->
+        <div id="main_header">
+            <div class="header_container">
+
+                <!--LOGO --->
+                <a href="index.html"><img class="logo" src="Images/logo.png" alt="LOGO"></a>
+
+                <!--NAVIGATION BAR -->
+                <nav>
+                    <ul>
+                        <li><a href="#">About Us </a></li>
+                        <li><a href="men.html"> Men </a></li>
+                        <li><a href="#">Women </a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                    <div class="search_basket_user">
+                        <div class="search">
+                            <a href="#" class="unicons"><img class="icon" src="Icons/search.svg" alt="SEARCH"></a>
+                            <input type="text" placeholder="Search" class="searchInput">
+                        </div>
+                        <a href="login.html" class="unicons"><img class="icon" src="Icons/user.svg" alt="USER"></i></a>
+                        <a href="#" class="unicons"><img class="icon" src="Icons/shopping-basket.svg"
+                                alt="BASKET"></i></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="text_slider">
+                <div class="text_wrapper">
+                    <h3 class="slider_text">10% Student discount - <a href="signup.html" class="highlight">Join
+                            today</a></h3>
+                    <h3 class="slider_text alternate_text">Get 10% OFF on your First Purchase Today! Offer valid for a
+                        limited time only</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============SIDE NAVBAR==================-->
+
+        <div class="side_by_side">
+            <div class="Categories">
+                <h3>Categories</h3>
+                <div class="clothing">
+                    <details>
+                        <summary>Clothing</summary>
+                        <ul>
+                            <li>
+                                <input type="radio" id="vests" name="clothing">
+                                <label for="vests">Vests</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="shorts" name="clothing" onclick="redirectToCategory('shorts')">
+                                <label for="shorts">Shorts</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="hoodies_long sleeves" name="clothing"
+                                    onclick="redirectToCategory('hoodies_long sleeves')">
+                                <label for="hoodies_long sleeves">Hoodies/Long Sleeves</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="shoes" name="clothing" onclick="redirectToCategory('shoes')">
+                                <label for="shoes">Shoes</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- New Size Filter -->
+                <div class="size">
+                    <details>
+                        <summary>Size</summary>
+                        <ul>
+                            <li>
+                                <input type="radio" id="xs" name="size" onclick="redirectToSize('XS')">
+                                <label for="xs">XS</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="s" name="size" onclick="redirectToSize('S')">
+                                <label for="s">S</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="m" name="size" onclick="redirectToSize('M')">
+                                <label for="m">M</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="l" name="size" onclick="redirectToSize('L')">
+                                <label for="l">L</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="xl" name="size" onclick="redirectToSize('XL')">
+                                <label for="xl">XL</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="accessories">
+                    <details>
+                        <summary>Accessories</summary>
+                        <ul>
+                            <li>
+                                <input type="radio" id="volley balls" name="volley balls"
+                                    onclick="redirectToSize('volley balls')">
+                                <label for="volley balls">Volley Balls</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="elbow pads" name="elbow pads"
+                                    onclick="redirectToSize('elbow pads')">
+                                <label for="elbow pads">Elbow pads</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="knee pads" name="knee pads"
+                                    onclick="redirectToSize('knee pads')">
+                                <label for="knee pads">Knee Pads</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="headbands" name="headbands"
+                                    onclick="redirectToSize('headbands')">
+                                <label for="headbands">Headbands</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- New Price Filter -->
+                <div class="price">
+                    <details>
+                        <summary>Price</summary>
+                        <div class="price-inputs">
+                            <label for="priceMin">Min:</label>
+                            <input type="number" id="priceMin" placeholder="£0">
+                            <label for="priceMax">Max:</label>
+                            <input type="number" id="priceMax" placeholder="£100">
+                        </div>
+                        <div class="order-container">
+                            <label for="orderPrice">Order by Price:</label>
+                            <select id="orderPrice" name="orderPrice" onchange="orderByPrice()">
+                                <option value="ascending">Ascending</option>
+                                <option value="descending">Descending</option>
+                            </select>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="products_container">
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 1">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 1</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 2">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 2</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 3">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 3</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 4">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 4</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 5">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 5</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 6">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 6</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 7">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 7</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 8">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 8</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+                <div class="item">
+                    <img src="Images/items/grey.jpg" alt="Product 9">
+                    <div class="text">
+                        <span>Brand</span>
+                        <h5>Product 9</h5>
+                        <h4>Price</h4>
+                    </div>
+                    <a href="#"><i class="uis uis-heart heart"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="JAVASCRIPT/basketball_filter.js"></script>
+</body>
+
+</html>
