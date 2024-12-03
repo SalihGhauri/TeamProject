@@ -13,30 +13,45 @@
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/Footer.css">
     <link rel="stylesheet" href="CSS/products.css">
+    <link rel="stylesheet" href="CSS/home.css">
 </head>
 
 <body>
     <main>
+        <!-- TOP MAIN NAV BAR -->
         <div id="main_header">
-            <nav>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="men.html">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Accessories</a></li>
-                </ul>
-                <a href="index.html"></a>
-                <img class="logo" src="Images/logo.png" alt="LOGO">
-                <div class="search_basket_user">
-                    <div class="search">
-                        <a href="#" class="unicons"><img class="icon" src="Icons/search.svg" alt="SEARCH"></a>
-                        <input type="text" placeholder="Search" class="searchInput">
-                    </div>
-                    <a href="login.html" class="unicons"><img class="icon" src="Icons/user.svg" alt="USER"></a>
-                    <a href="#" class="unicons"><img class="icon" src="Icons/shopping-basket.svg" alt="BASKET"></a>
+            <div class="header_container">
+                
+                <!--LOGO --->
+                <a href="index.html"><img class="logo" src="Images/logo.png" alt="LOGO"></a>
+                
+                <!--NAVIGATION BAR -->
+                 <nav>
+                     <ul>
+                        <li><a href="#">About Us </a></li>
+                        <li><a href="men.html"> Men </a></li>
+                        <li><a href="#">Women </a></li>
+                        <li><a href="#">Accessories</a></li>
+                     </ul>
+                     <div class="search_basket_user">
+                        <div class="search">
+                            <a href="#" class="unicons"><img class="icon" src="Icons/search.svg" alt="SEARCH"></a>
+                            <input type="text" placeholder="Search" class="searchInput">
+                        </div>
+                        <a href="login.html" class="unicons"><img class="icon" src="Icons/user.svg" alt="USER"></i></a>
+                        <a href="#" class="unicons"><img class="icon" src="Icons/shopping-basket.svg"alt="BASKET"></i></a>
+                   </div>
+                </nav>
+            </div>
+            <div class="text_slider">
+                <div class="text_wrapper">
+                    <h3 class="slider_text">10% Student discount - <a href="signup.html" class="highlight">Join today</a></h3>
+                    <h3 class="slider_text alternate_text">Get 10% OFF on your First Purchase Today! Offer valid for a limited time only</h3>
                 </div>
-            </nav>
+            </div>
         </div>
+
+        <!-- ============SIDE NAVBAR==================-->
 
         <div class="side_by_side">
             <div class="shop-by">
@@ -46,11 +61,13 @@
                         <summary>Category</summary>
                         <ul>
                             <li>
-                                <input type="radio" id="basketball" name="category" onclick="redirectToCategory('basketball')">
+                                <input type="radio" id="basketball" name="category"
+                                    onclick="redirectToCategory('basketball')">
                                 <label for="basketball">Basketball</label>
                             </li>
                             <li>
-                                <input type="radio" id="football" name="category" onclick="redirectToCategory('football')">
+                                <input type="radio" id="football" name="category"
+                                    onclick="redirectToCategory('football')">
                                 <label for="football">Football</label>
                             </li>
                             <li>
@@ -58,7 +75,8 @@
                                 <label for="rugby">Rugby</label>
                             </li>
                             <li>
-                                <input type="radio" id="volleyball" name="category" onclick="redirectToCategory('volleyball')">
+                                <input type="radio" id="volleyball" name="category"
+                                    onclick="redirectToCategory('volleyball')">
                                 <label for="volleyball">Volleyball</label>
                             </li>
                             <li>
