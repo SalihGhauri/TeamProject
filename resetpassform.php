@@ -1,11 +1,11 @@
 <?php
 include 'ConnectDB.php'; 
 
-if (isset($_GET['email'])) {
-    $email = filter_var($_GET['email'], FILTER_SANITIZE_EMAIL);
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format.");
-    }
+if (!isset($_GET['email'])) {
+    header("Location: resetpassword.html");
+    exit;
+}
+$email = filter_var($_GET['email'], FILTER_SANITIZE_EMAIL);
 
     try {
         $stmt = $conn->prepare("SELECT * FROM Users WHERE email = :email");
