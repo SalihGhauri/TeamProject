@@ -1,25 +1,38 @@
 <?php
-require_once 'connectDB.php';
+$dbname = "cs2team10_db";
+$dbhost = "localhost";
+$username = "cs2team10";
+$password = "3WqYX34Scob8B1n";
 
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-//hashes the password 
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $email = $_POST['email'];
-    $dob = $_POST['dob'];
+try {
+  $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $username, $password);
+  //sets the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-//prepares the statement
-    $stmt = $conn->prepare("INSERT INTO Users (firstname, lastname, password, email, dob) VALUES (:firstname, :lastname, :password, :email, :dob)");
-//binds parameters
-    $stmt->bindParam(':password', $password);
-    $stmt->bindParam(':email', $email);
+  //users input
+  $firstname = $_POST['firstname'];
+  $lastname = $_POST['lastname'];
+  $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+  $email = $_POST['email'];
+  $dob = $_POST['dob'];
 
-//executes the statement
-    $stmt->execute();
+  //prepares the statement
+  $stmt = $conn->prepare("INSERT INTO Users (firstname, lastname, password, email, dob) VALUES (:firstname, :lastname, :password, :email, :dob)");
 
-    echo "New user created successfully";
+  //binds the parameters
+  $stmt->bindParam(':firstname', $firstname);
+  $stmt->bindParam(':lastname', $lastname);
+  $stmt->bindParam(':password', $password);
+  $stmt->bindParam(':email', $email);
+  $stmt->bindParam(':dob', $dob);
+
+  //executes the statement
+  $stmt->execute();
+
+  echo "New user created successfully";
+
 } catch(PDOException $e) {
-    echo "Error: " . $e->getMessage();
+  echo "Connection failed: " . $e->getMessage();
 }
 
 //closes the connection
