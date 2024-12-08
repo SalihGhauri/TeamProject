@@ -1,5 +1,5 @@
 /* -----------------FIRST PAGE CSS STYLING ----------------*/
-#main_header {
+/*#main_header {
     width: 100%;
     height: 100vh;
     background-image: url("/Images/background.png");
@@ -12,16 +12,19 @@
     padding: 40px 0.5%;
 }
 
-/* --------------- TEXT SLIDER ------------*/
+*/
+
+/*-------------- TEXT SLIDER ------------ */
 .text_slider {
     width: 100%;
     height: 8vh;
     background-color: #af1212;
-    margin-top: 20px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 0;
 }
 
 .text_wrapper {
@@ -85,9 +88,19 @@
 
 /*----------------- HOME PAGE content ===============*/
 
+.content_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/Images/background.png");
+    background-repeat: no-repeat;
+    background-position: 300% 100%;
+
+}
+
 .contents {
-    margin: 70px 30px;
+    margin: 90px 20px;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -131,9 +144,6 @@
 }
 
 
-
-
-/*.contents h4 {} - Not sure if you want to add code to this hence why I have commented it - Salih 
 
 /*----------------- SECTION 2 -------------*/
 .section-2-container {
@@ -277,15 +287,16 @@
     justify-content: center;
     perspective: 1000px;
     height: 300px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
+}
+
+/* Clear floats after image containers */
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
-.centered{
+}
+
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
