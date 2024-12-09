@@ -306,6 +306,18 @@
     display: table;
 }
 
+.hide-1,
+.hide-2,
+.hide-3{
+    opacity: 0;
+}
+
+.photo-1:hover .hide-1,
+.photo-2:hover .hide-2,
+.photo-3:hover .hide-3{
+    opacity: 1;
+}
+
 
 .centered {
     position: absolute;

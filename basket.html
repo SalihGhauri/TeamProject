@@ -30,7 +30,7 @@
                 <!--NAVIGATION BAR -->
                 <nav>
                     <ul>
-                         <!--<li><a href="index.html">Home </a></li>--><!--  HOME NOT NEEDED AS we can click on the logo? - rachika-->
+                        <li><a href="index.html">Home </a></li>
                         <li><a href="men.html"> Men </a></li>
                         <li><a href="#">Women </a></li>
                         <li><a href="product.html">Categories</a>
@@ -71,7 +71,7 @@
             <div class="basket-labels">
                 <ul>
                     <li class="item-heading">Item</li>
-                    <li class="color">color</li>
+                    <li class="color">quantity</li>
                     <li class="size">size</li>
                     <li class="price">price</li>
                 </ul>
@@ -82,14 +82,16 @@
                         <img src="Images/placeholder.png" alt="Placholder Image 2" class="product-frame">
                     </div>
                     <div class="product-details">
-                        <h1> red shoes</h1>
+                        <h1></h1>
                     </div>
                 </div>
-                <div class="color">blue</div>
-                <div class="size">
-                    <input type="number" value="4" min="1" class="quantity-field">
+                <div class="color">
+                    <input type="number" value="1" min="1" class="quantity-field">
                 </div>
-                <div class="price">104.00</div>
+                <div class="size">
+                    <input type="number" value="1" min="1" class="quantity-field">
+                </div>
+                <div class="price"></div>
                 <div class="remove">
                     <button>Remove</button>
                 </div>
@@ -100,14 +102,16 @@
                         <img src="Images/placeholder.png" alt="Placholder Image 2" class="product-frame">
                     </div>
                     <div class="product-details">
-                        <h1> blue shoes</h1>
+                        <h1> </h1>
                     </div>
                 </div>
-                <div class="color">red</div>
+                <div class="color">
+                    <input type="number" value="1" min="1" class="quantity-field">
+                </div>
                 <div class="size">
                     <input type="number" value="1" min="1" class="quantity-field">
                 </div>
-                <div class="price">26.00</div>
+                <div class="price"></div>
                 <div class="remove">
                     <button>Remove</button>
                 </div>
@@ -118,11 +122,11 @@
               <div class="summary-total-items"> Items in your Bag</div>
               <div class="summary-subtotal">
                     <div class="subtotal-title">Subtotal</div>
-                    <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+                    <div class="subtotal-value final-value" id="basket-subtotal"></div>
                 </div>
                 <div class="summary-total">
                     <div class="total-title">Total</div>
-                    <div class="total-value final-value" id="basket-total">130.00</div>
+                    <div class="total-value final-value" id="basket-total"></div>
                 </div>
                 <div class="summary-checkout">
                     <a href="checkout.html"><button class="checkout-cta ">Checkout</button></a>
