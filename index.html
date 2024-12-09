@@ -47,8 +47,12 @@
                     </ul>
                     <div class="search_basket_user">
                         <div class="search">
-                            <a href="#" class="unicons"><img class="icon" src="Icons/search.svg" alt="SEARCH"></a>
-                            <input type="text" placeholder="Search" class="searchInput">
+                            <form action="search.php" method="GET" class="search-form">
+                                <input type="text" name="query" placeholder="Search" class="searchInput">
+                                <button type="submit" class="search-button">
+                                    <img class="icon" src="Icons/search.svg" alt="SEARCH">
+                                </button>
+                            </form>
                         </div>
                         <a href="login.html" class="unicons"><img class="icon" src="Icons/user.svg" alt="USER"></i></a>
                         <a href="basket.html" class="unicons"><img class="icon" src="Icons/shopping-basket.svg"
