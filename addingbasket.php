@@ -20,21 +20,35 @@ if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['produc
         $conn = getConnection();
         $user_id = getCurrentUserId();
 
-        $stmt = $conn->prepare('SELECT * FROM product_table WHERE product_id = ?');
+        // Fetch product details
+        $stmt = $conn->prepare('SELECT price FROM product_table WHERE product_id = ?');
         $stmt->execute([$product_id]);
         $product = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($product) {
-            $basketQuery = $conn->prepare('SELECT * FROM basket_table WHERE user_id = ? AND product_id = ?');
+            $price = $product['price'];
+            $subtotal = $price * $quantity;
+
+            // Check if the item already exists in the basket
+            $basketQuery = $conn->prepare('SELECT * FROM basket_table WHERE user_ID = ? AND product_ID = ?');
             $basketQuery->execute([$user_id, $product_id]);
             $basketItem = $basketQuery->fetch(PDO::FETCH_ASSOC);
 
             if ($basketItem) {
-                $updateStmt = $conn->prepare('UPDATE basket_table SET quantity = quantity + ? WHERE basket_id = ?');
-                $updateStmt->execute([$quantity, $basketItem['basket_id']]);
+                // Update existing basket item
+                $updateStmt = $conn->prepare(
+                    'UPDATE basket_table 
+                     SET item_Count = item_Count + ?, subTotal = subTotal + ? 
+                     WHERE basket_id = ?'
+                );
+                $updateStmt->execute([$quantity, $subtotal, $basketItem['basket_id']]);
             } else {
-                $insertStmt = $conn->prepare('INSERT INTO basket_table (user_id, product_id, quantity) VALUES (?, ?, ?)');
-                $insertStmt->execute([$user_id, $product_id, $quantity]);
+                // Insert new item into the basket
+                $insertStmt = $conn->prepare(
+                    'INSERT INTO basket_table (user_ID, product_ID, item_Count, subTotal) 
+                     VALUES (?, ?, ?, ?)'
+                );
+                $insertStmt->execute([$user_id, $product_id, $quantity, $subtotal]);
             }
         } else {
             echo "Product not found!";
@@ -47,11 +61,12 @@ if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['produc
 function fetchBasketItems() {
     $conn = getConnection();
     $user_id = getCurrentUserId();
+
     $stmt = $conn->prepare(
-        'SELECT b.basket_id, p.product_id, p.price, p.image_url, p.type, b.quantity 
+        'SELECT b.basket_id, p.product_id, p.price, p.image_url, p.type, b.item_Count, b.subTotal 
          FROM basket_table b
-         JOIN product_table p ON b.product_id = p.product_id
-         WHERE b.user_id = ?'
+         JOIN product_table p ON b.product_ID = p.product_id
+         WHERE b.user_ID = ?'
     );
     $stmt->execute([$user_id]);
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
