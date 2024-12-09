@@ -67,12 +67,14 @@
 
 body{
     background-color: #fff;
+    
 }
 
 .basket {
   background-color: #fff;
   color: #575757;
   margin: 0 auto;
+  border: 1000px;
 }
 
 .basket a {
