@@ -3,28 +3,48 @@ require_once 'connectdb.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+// Get search query and filters from GET parameters
 $search_query = isset($_GET['query']) ? $_GET['query'] : '';
+$brand_filter = isset($_GET['brand']) ? $_GET['brand'] : 'all';
+$price_filter = isset($_GET['price']) ? $_GET['price'] : 'low-high';
 
-if (!empty($search_query)) {
-    try {
-        $sql = "SELECT p.*, c.sport, c.type 
-                FROM Products p 
-                JOIN Category c ON p.category_ID = c.category_ID 
-                WHERE p.pName LIKE :search 
-                OR p.description LIKE :search 
-                OR c.sport LIKE :search
-                OR c.type LIKE :search";
-        
-        $stmt = $conn->prepare($sql);
-        $search_term = "%" . $search_query . "%";
-        $stmt->bindParam(':search', $search_term, PDO::PARAM_STR);
-        $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    } catch(PDOException $e) {
-        echo "Error: " . $e->getMessage();
-        $result = [];
+// Build the SQL query
+try {
+    $sql = "SELECT p.*, c.sport, c.type 
+            FROM Products p 
+            JOIN Category c ON p.category_ID = c.category_ID 
+            WHERE (p.pName LIKE :search 
+            OR p.description LIKE :search 
+            OR c.sport LIKE :search
+            OR c.type LIKE :search)";
+
+    // Add brand filter
+    if ($brand_filter !== 'all') {
+        $sql .= " AND p.brand = :brand";
     }
-} else {
+
+    // Apply sorting
+    if ($price_filter === 'low-high') {
+        $sql .= " ORDER BY p.price ASC";
+    } elseif ($price_filter === 'high-low') {
+        $sql .= " ORDER BY p.price DESC";
+    }
+
+    $stmt = $conn->prepare($sql);
+
+    // Bind search term
+    $search_term = "%" . $search_query . "%";
+    $stmt->bindParam(':search', $search_term, PDO::PARAM_STR);
+
+    // Bind brand filter if applicable
+    if ($brand_filter !== 'all') {
+        $stmt->bindParam(':brand', $brand_filter, PDO::PARAM_STR);
+    }
+
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
     $result = [];
 }
 ?>
