@@ -1,17 +1,18 @@
-
 /* -----------------MAIN STYLE FOR ALL PAGES----------------- */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: white;
     color: black;
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
     transition: 0.3s;
 }
