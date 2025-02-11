@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -29,7 +30,7 @@
                 <!--NAVIGATION BAR -->
                 <nav>
                     <ul>
-                        <!--<li><a href="index.html">Home </a></li>--><!--  HOME NOT NEEDED AS we can click on the logo? - rachika-->
+                        <li><a href="index.html">Home </a></li>
                         <li><a href="men.html"> Men </a></li>
                         <li><a href="#">Women </a></li>
                         <li><a href="product.html">Categories</a>
@@ -46,8 +47,12 @@
                     </ul>
                     <div class="search_basket_user">
                         <div class="search">
-                            <a href="#" class="unicons"><img class="icon" src="Icons/search.svg" alt="SEARCH"></a>
-                            <input type="text" placeholder="Search" class="searchInput">
+                            <form action="search.php" method="GET" class="search-form">
+                                <input type="text" name="query" placeholder="Search" class="searchInput">
+                                <button type="submit" class="search-button">
+                                    <img class="icon" src="Icons/search.svg" alt="SEARCH">
+                                </button>
+                            </form>
                         </div>
                         <a href="login.html" class="unicons"><img class="icon" src="Icons/user.svg" alt="USER"></i></a>
                         <a href="basket.html" class="unicons"><img class="icon" src="Icons/shopping-basket.svg"
@@ -117,18 +122,22 @@
             <h5>Who are sports at us</h5>
             <div class="row">
                 <div class="column">
-                    <img src="Images/footballblur.jpg" alt="Snow" style="width:100%;">
-                    <div class="centered">We strive to provide the best and newest products we can at a fair price.
+                    <div class="photo-1">
+                        <img src="Images/footballblur.jpg" alt="Snow" style="width:100%;">
+                        <div class="centered"><h6>Innovation</h6><div class="hide-1">We strive to provide the best and newest products we can at a fair price.</div></div>
                     </div>
                 </div>
                 <div class="column">
-                    <img src="Images/communityblur.jpg" alt="Snow" style="width:100%;">
-                    <div class="centered">We strive to help develop local sporting communities to help give back.</div>
+                    <div class="photo-2">
+                        <img src="Images/communityblur.jpg" alt="Snow" style="width:100%;">                   
+                        <div class="centered"><h6>Community</h6><div class="hide-2">We strive to help develop local sporting communities to help give back.</div></div>
+                    </div>
                 </div>
                 <div class="column">
-                    <img src="Images/finessblur.jpg" alt="Snow" style="width:100%;">
-                    <div class="centered">We are passionate about spreading the awareness and importance of staying
-                        healthy</div>
+                    <div class="photo-3">
+                        <img src="Images/finessblur.jpg" alt="Snow" style="width:100%;">
+                        <div class="centered"><h6>Fitness</h6><div class="hide-3">We are passionate about spreading the awareness and importance of stayinghealthy.</div></div>
+                    </div>
                 </div>
             </div>
         </div>
