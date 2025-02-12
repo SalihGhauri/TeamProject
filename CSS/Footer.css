@@ -1,5 +1,11 @@
 footer {
-  padding: 5px 0;
+  display: flex;
+  position: flex;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: auto;
+  margin-top: 100px;
   background-color: #af1212;
   color: #ffffff;
   text-align: center;
@@ -45,9 +51,9 @@ footer {
   text-align: center;
   margin: 0 10px;
   color: inherit;
-  opacity: 0.75;
-  border-radius: 50%;
-  background-color: #ffffff;
+  opacity: 1;
+  border-radius: 100%;
+  background-color: #af1212;
   transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
@@ -69,14 +75,3 @@ footer {
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding: 0 5px;
-  }
-}

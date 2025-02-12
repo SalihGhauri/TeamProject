@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset ="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- _______________CSS LINKSHEETS ___________________-->
@@ -13,121 +13,98 @@
 
     <link rel="stylesheet" href="CSS/Footer.css">
     <link rel="stylesheet" href="CSS/Basket.css">
-    <link rel="stylesheet" href="CSS/home.css">
 
-    <title>baset</title>
+    <title>Shopping Basket</title>
 </head>
 
 <body>
-    <main>
-        <!-- TOP MAIN NAV BAR -->
-        <div id="main_header">
-            <div class="header_container">
-                
-                <!--LOGO --->
-                <a href="index.html"><img class="logo" src="Images/logo.png" alt="LOGO"></a>
-                
-                <!--NAVIGATION BAR -->
-                <nav>
-                    <ul>
-                         <!--<li><a href="index.html">Home </a></li>--><!--  HOME NOT NEEDED AS we can click on the logo? - rachika-->
-                        <li><a href="men.html"> Men </a></li>
-                        <li><a href="#">Women </a></li>
-                        <li><a href="product.html">Categories</a>
-                            <ul>
-                                <li><a href="basketball.html">Baksetball</a></li>
-                                <li><a href="football.html">Football</a></li>
-                                <li><a href="rugby.html">Rugby</a></li>
-                                <li><a href="volleyball.html">Volleyball</a></li>
-                                <li><a href="golf.html">Golf</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
-                    </ul>
-                    <div class="search_basket_user">
-                        <div class="search">
-                            <a href="#" class="unicons"><img class="icon" src="Icons/search.svg" alt="SEARCH"></a>
-                            <input type="text" placeholder="Search" class="searchInput">
-                        </div>
-                        <a href="login.html" class="unicons"><img class="icon" src="Icons/user.svg" alt="USER"></i></a>
-                        <a href="basket.html" class="unicons"><img class="icon" src="Icons/shopping-basket.svg"
-                                alt="BASKET"></i></a>
-                    </div>
-                </nav>
-            </div>
-            <div class="text_slider">
-                <div class="text_wrapper">
-                    <h3 class="slider_text">10% Student discount - <a href="signup.html" class="highlight">Join today</a></h3>
-                    <h3 class="slider_text alternate_text">Get 10% OFF on your First Purchase Today! Offer valid for a limited time only</h3>
-                </div>
-            </div>
-        </div>
-
-       <!-- ===================BASKET SECTION =================-->
-
-        <div class="basket">
-            <div class="basket-labels">
+    <header>
+        <div class="header_container">
+            <a href="index.html"><img class="logo" src="Images/logo.png" alt="LOGO"></a>
+            <nav>
                 <ul>
-                    <li class="item item-heading">Item</li>
-                    <li class="color">color</li>
-                    <li class="size">size</li>
-                    <li class="price">price</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="product.html">Categories</a>
+                        <ul>
+                            <li><a href="basketball.html">Basketball</a></li>
+                            <li><a href="football.html">Football</a></li>
+                            <li><a href="rugby.html">Rugby</a></li>
+                            <li><a href="volleyball.html">Volleyball</a></li>
+                            <li><a href="golf.html">Golf</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
-            </div>
-            <div class="basket-product">
-                <div class="item">
-                    <div class="product-image">
-                        <img src="http://placehold.it/120x166" alt="Placholder Image 2" class="product-frame">
+                <div class="search_basket_user">
+                    <div class="search">
+                        <a href="#" class="unicons"><img class="icon" src="Icons/search.svg" alt="SEARCH"></a>
+                        <input type="text" placeholder="Search" class="searchInput">
                     </div>
-                    <div class="product-details">
-                        <h1><strong><span class="item-quantity"></span></strong> red shoes</h1>
-                    </div>
+                    <a href="login.html" class="unicons"><img class="icon" src="Icons/user.svg" alt="USER"></a>
+                    <a href="basket.html" class="unicons"><img class="icon" src="Icons/shopping-basket.svg"
+                            alt="BASKET"></a>
                 </div>
-                <div class="color">blue</div>
-                <div class="size">
-                    <input type="number" value="4" min="1" class="quantity-field">
-                </div>
-                <div class="price">104.00</div>
-                <div class="remove">
-                    <button>Remove</button>
-                </div>
-            </div>
-            <div class="basket-product">
-                <div class="item">
-                    <div class="product-image">
-                        <img src="http://placehold.it/120x166" alt="Placholder Image 2" class="product-frame">
-                    </div>
-                    <div class="product-details">
-                        <h1><strong><span class="item-quantity"></span></strong> blue shoes</h1>
-                    </div>
-                </div>
-                <div class="color">red</div>
-                <div class="size">
-                    <input type="number" value="1" min="1" class="quantity-field">
-                </div>
-                <div class="price">26.00</div>
-                <div class="remove">
-                    <button>Remove</button>
-                </div>
+            </nav>
+        </div>
+        <div class="text_slider">
+            <div class="text_wrapper">
+                <h3 class="slider_text">10% Student discount - <a href="signup.html" class="highlight">Join today</a>
+                </h3>
+                <h3 class="slider_text alternate_text">Get 10% OFF on your First Purchase Today! Offer valid for a
+                    limited time only</h3>
             </div>
         </div>
-        <aside>
-            <div class="summary">
-              <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
-              <div class="summary-subtotal">
-                    <div class="subtotal-title">Subtotal</div>
-                    <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
-                </div>
-                <div class="summary-total">
-                    <div class="total-title">Total</div>
-                    <div class="total-value final-value" id="basket-total">130.00</div>
-                </div>
-                <div class="summary-checkout">
-                    <a href="checkout.html"><button class="checkout-cta ">Checkout</button></a>
+    </header>
+
+    <main>
+        <div class="basket-wrapper">
+            <div class="basket-section">
+                <h2>Your Shopping Basket</h2>
+                <div class="basket-items">
+                    <div class="basket-item">
+                        <img src="Images/placeholder.png" alt="Product Image" class="product-img">
+                        <div class="product-details">
+                            <h3>Sports Shoes</h3>
+                            <p>Size: Small</p>
+                            <label for="quantity1">Quantity:</label>
+                            <input type="number" id="quantity1" value="1" min="1">
+                            <p class="price">£49.99</p>
+                            <div class="buttons">
+                                <button class="wishlist-btn">❤️ Add to Wishlist</button>
+                                <button class="remove-btn">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="basket-item">
+                        <img src="Images/placeholder.png" alt="Product Image" class="product-img">
+                        <div class="product-details">
+                            <h3>Basketball</h3>
+                            <label for="quantity2">Quantity:</label>
+                            <input type="number" id="quantity2" value="1" min="1">
+                            <p class="price">£19.99</p>
+                            <div class="buttons">
+                                <button class="wishlist-btn">❤️ Add to Wishlist</button>
+                                <button class="remove-btn">Remove</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </aside>
+
+            <aside class="order-summary-section">
+                <h2>Order Summary</h2>
+                <label for="discount-code">Discount Code:</label>
+                <input type="text" id="discount-code" class="discount-box" placeholder="Enter code">
+                <button class="apply-btn">Apply</button>
+                <p class="subtotal">Subtotal: £69.98</p>
+                <p class="total">Total: £69.98</p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </aside>
+        </div>
 
         <div class="footer-clean">
             <footer>
@@ -159,19 +136,20 @@
                             <li><a href="#">Terms of sale</a></li>
                         </ul>
                         </p>
-                    </span>
-                    <div class="col-lg-3 item social"><a href="#"><img class="icon ion-social-facebook" src="images/instagram.jpg" alt="insta"></i></a><a href="#"><img class="icon ion-social-X" src="images/X.png" alt="X"></i></a><a href="#"><img class="icon ion-social-snapchat" src="Images/youtube.png" alt="youtube"></i></a><a href="#"><img class="icon ion-social-instagram" src="Images/facebook.png" alt="faceboo"></i></a>
-                        <p class="copyright">Sports are us © 2024</p>
+                        </span>
+                        <div class="col-lg-3 item social"><a href="#"><img class="icon ion-social-facebook"
+                                    src="images/instagram.jpg" alt="insta"></i></a><a href="#"><img
+                                    class="icon ion-social-X" src="images/X.png" alt="X"></i></a><a href="#"><img
+                                    class="icon ion-social-snapchat" src="Images/youtube.png" alt="youtube"></i></a><a
+                                href="#"><img class="icon ion-social-instagram" src="Images/facebook.png"
+                                    alt="faceboo"></i></a>
+                            <p class="copyright">Sports are us © 2024</p>
+                        </div>
+
                     </div>
-                    
-                </div>
             </footer>
         </div>
-
-
-
     </main>
-
 </body>
 
 </html>

@@ -94,6 +94,7 @@ nav ul li ul li a:hover {
     align-items: center;
     margin-right: 10px;
     margin-left: 170px;
+    position: relative;
 }
 
 .search {
@@ -109,7 +110,7 @@ nav ul li ul li a:hover {
     background-color: transparent;
     position: relative;
     left: 40px;
-    bottom: 25px;
+    bottom: 10px;
     font-weight: 500;
 }
 
