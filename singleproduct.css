@@ -1,0 +1,21 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+.card{
+    display: flex;
+    margin-top: 22px;
+
+}
+
+.main_image img{
+    width: 366px;
+    margin-inline: 22px ;
+
+}
+
+.card .small_images{
+    width: 74px;
+    margin-left: 22px;
+}
