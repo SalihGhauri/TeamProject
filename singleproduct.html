@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="CSS/products.css">
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/search.css">
+    <link rel="stylesheet" href="CSS/singleproduct.css">
+
 </head>
 <body>
     <main>
@@ -74,15 +76,15 @@
 
         <div class="card">
             <div class="small_images">
-                <img src="Images/items/grey.jpg" alt=""> <br>
-                <img src="Images/items/grey.jpg" alt="">
-                <img src="Images/items/grey.jpg" alt="">
-                <img src="Images/items/grey.jpg" alt="">
-                <img src="Images/items/grey.jpg" alt="">
+                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
             </div>
 
             <div class="main_image">
-                <img src="Images/items/grey.jpg" alt="">
+                <img src="Images/items/grey.jpg"  id="main_img" alt="">
             </div>
 
             <div class="details">
@@ -90,8 +92,8 @@
                 <h3> price</h3>
                 <br>
                 <h3>Choose your size</h3>
-                <button>Add to Basket </button>
-                <button>Favourite</button>
+                <button class="btn">Add to Basket </button><br>
+                <button class="btn">Favourite     </button>
             </div>
 
         </div>
@@ -145,5 +147,12 @@
         </div>
 
     </main>
+
+    <script>
+        function click(newImg){
+            let getImg= document.getElementId("main_img");
+            getImg.src= newImg.src;
+        }
+    </script>
 </body>
 </html>
