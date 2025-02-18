@@ -10,7 +10,6 @@
 }
 
 .main_image img{
-
     width: 366px;
     margin-inline: 22px ;
     width: 440px;
@@ -30,9 +29,11 @@
     margin-top: 11px;
 }
 
+
 .details{
     margin-left: 5px;
 }
+
 
 .details h3{
     margin-top: 11px;
@@ -42,6 +43,7 @@
     margin-top: 11px;
 }
 
+<<<<<<< HEAD
 
 .size {
     display: grid;
