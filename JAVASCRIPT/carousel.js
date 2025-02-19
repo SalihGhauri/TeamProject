@@ -17,7 +17,7 @@ function moveSlide() {
 }
 
 function startSlide() {
-  autoSlide = setInterval(moveSlide, 5000);
+  autoSlide = setInterval(moveSlide, 6500);
 }
 
 function resetSlide() {
