@@ -18,22 +18,15 @@ try {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-<!--when the form is submitted it will go to this page to process the logic of adding a product-->
-    <form action="addProductLogic.php" method="post">    
-<!--label for the forms-->
-        <label for="pName">productName:</label>
-        <input type="text" id="pName" name="pName" required><br><br>
-        
-        <label for="description">Description:</label>
-        <input type="text" id="description" name="description" required><br><br>
-    
-        <label for="price">Price:</label>
-        <input type="int" id="price" name="price" required><br><br>
-               
-       <label for="price">Price:</label>
-        <input type="int" id="price" name="price" required><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+<!--creates buttons for the user to direct them to different pages after being logged in-->
+<a href="https://cs2team10.cs2410-web01pvm.aston.ac.uk/addProduct.php">
+	<button class >Add a Product</button>
+</a>
+<a href="https://cs2team10.cs2410-web01pvm.aston.ac.uk/editproduct.php">
+	<button class >Edit Product</button>
+</a>
+<a href="https://cs2team10.cs2410-web01pvm.aston.ac.uk/deleteProduct.php">
+	<button class >Delete Product</button>
+</a>
 </body>
 </html>
