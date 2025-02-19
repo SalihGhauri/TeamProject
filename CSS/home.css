@@ -178,6 +178,10 @@
     font-weight: 100;
 }
 
+a {
+    text-decoration: none;
+}
+
 .links-container ul {
     margin-top: 10px;
     list-style: none;
