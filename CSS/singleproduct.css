@@ -10,14 +10,19 @@
 }
 
 .main_image img{
-
+<<<<<<< HEAD
+=======
     width: 366px;
     margin-inline: 22px ;
+>>>>>>> bc68f3aca841c36ff0d1162c861070f6780ebf23
     width: 440px;
     height: 540px;
     margin-inline: 15px ;
     border-radius: 2%;
+<<<<<<< HEAD
+=======
 
+>>>>>>> bc68f3aca841c36ff0d1162c861070f6780ebf23
 }
 
 .card .small_images img{
@@ -30,10 +35,15 @@
     margin-top: 11px;
 }
 
+<<<<<<< HEAD
+=======
+
 .details{
     margin-left: 5px;
 }
 
+
+>>>>>>> bc68f3aca841c36ff0d1162c861070f6780ebf23
 .details h3{
     margin-top: 11px;
 }
@@ -42,6 +52,13 @@
     margin-top: 11px;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> bc68f3a (further chanes)
+=======
+>>>>>>> bc68f3aca841c36ff0d1162c861070f6780ebf23
 
 .size {
     display: grid;
@@ -90,13 +107,21 @@
     margin-left: 15px;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> bc68f3aca841c36ff0d1162c861070f6780ebf23
 .details .btn{
     background: #af1212;
     color: white;
     text-decoration: none;
     border: 0.5px solid transparent;
     font-weight: bold;
+<<<<<<< HEAD
+    padding:20px 100px;
+=======
     padding:20px 140px;
+>>>>>>> bc68f3aca841c36ff0d1162c861070f6780ebf23
     border-radius: 30px;
     transition: .4s;
     margin-top: 22px;
