@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/sideheader.css">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="stylesheet" href="customer-user.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-title">Admin Dashboard</h2>
+        <div class="menu">
+            <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="#"><i class="fas fa-box"></i> Inventory</a>
+            <a href="#"><i class="fas fa-users"></i> Customers</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Orders</a>
+            <a href="#"><i class="fas fa-chart-line"></i> Report</a>
+        </div>
+        <div class="bottom-menu">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        </div>
+    </div>
+
+    <!--============================ CUSTOMER LIST =====================-->
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="card-header">
+                    <h4> User List  
+                        <a href ="users-create.html" class= "btn- danger" > Add user</a>
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Action</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>name</td>
+                                <td>email</td>
+                                <td>phone</td>
+                                <td>
+                                    <a href="users-edit.php" class="btn-success">Edit</a>
+                                    <a href="users-delete.php" class="btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>name</td>
+                                <td>email</td>
+                                <td>phone</td>
+                                <td>
+                                    <a href="users-edit.php" class="btn-success">Edit</a>
+                                    <a href="users-delete.php" class="btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>name</td>
+                                <td>email</td>
+                                <td>phone</td>
+                                <td>
+                                    <a href="users-edit.php" class="btn-success">Edit</a>
+                                    <a href="users-delete.php" class="btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>name</td>
+                                <td>email</td>
+                                <td>phone</td>
+                                <td>
+                                    <a href="users-edit.php" class="btn-success">Edit</a>
+                                    <a href="users-delete.php" class="btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>name</td>
+                                <td>email</td>
+                                <td>phone</td>
+                                <td>
+                                    <a href="users-edit.php" class="btn-success">Edit</a>
+                                    <a href="users-delete.php" class="btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/sideheader.css">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="stylesheet" href="CSS/adduser.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-title">Admin Dashboard</h2>
+        <div class="menu">
+            <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="#"><i class="fas fa-box"></i> Inventory</a>
+            <a href="#"><i class="fas fa-users"></i> Customers</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Orders</a>
+            <a href="#"><i class="fas fa-chart-line"></i> Report</a>
+        </div>
+        <div class="bottom-menu">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        </div>
+    </div>
+
+    <!--============================ CUSTOMER LIST =====================-->
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add User</h4>
+                        <a href="users.php" class="btn-danger">Back</a>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-container">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone No.</label>
+                                    <input type="text" id="phone" name="phone" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">Select Role</label>
+                                    <select name="role" id="role" class="form-select">
+                                        <option value="">Select Role</option>
+                                        <option value="admin">Admin</option>
+                                        <option value="user">User</option>
+                                    </select>
+                                </div>
+                                <div class="checkbox-group">
+                                    <label for="is_ban">Ban User</label>
+                                    <input type="checkbox" id="is_ban" name="is_ban">
+                                </div>
+                            </div>
+                            <button type="submit" name="saveUser" class="btn btn-success">Save</button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
+    

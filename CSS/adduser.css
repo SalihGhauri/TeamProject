@@ -1,0 +1,103 @@
+/* ============ General Styling ============ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+}
+
+/* ============ Card Styling ============ */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%; /* Make it wider */
+    max-width: 900px; /* Prevent it from getting too wide on large screens */
+    margin: 50px auto; /* Center it vertically and horizontally */
+}
+
+/* ============ Form Styling ============ */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group {
+    width: 100%; /* Make each input take full width */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control,
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-left: 10px;
+}
+
+/* ============ Button Styling ============ */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-success {
+    background-color: #ff0080;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ============ Back Button ============ */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.card-header a:hover {
+    text-decoration: underline;
+}
