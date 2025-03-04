@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/sideheader.css">
+    <link rel="stylesheet" href="CSS/inventory.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-title">Admin Dashboard</h2>
+        <div class="menu">
+            <a href="admindashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="inventory.html" class="active"><i class="fas fa-box"></i> Inventory</a>
+            <a href="#"><i class="fas fa-users"></i> Customers</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Orders</a>
+            <a href="#"><i class="fas fa-chart-line"></i> Report</a>
+        </div>
+        <div class="bottom-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Inventory Management</h1>
+
+        <div class="dashboard-cards">
+            <div class="card">
+                <i class="fas fa-box"></i>
+                <div class="card-content">
+                    <h2 id="totalProducts">45</h2>
+                    <p>Total Products</p>
+                </div>
+            </div>
+
+            <div class="card warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="card-content">
+                    <h2 id="lowStock">5</h2>
+                    <p>Low Stock</p>
+                </div>
+            </div>
+
+            <div class="card danger">
+                <i class="fas fa-times-circle"></i>
+                <div class="card-content">
+                    <h2 id="outOfStock">2</h2>
+                    <p>Out of Stock</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="card-content">
+                    <h2 id="totalOrders">3</h2>
+                    <p>Total Orders Processed</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="inventory-controls">
+            <input type="text" id="searchBar" placeholder="Search inventory...">
+
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Football">Football</option>
+                <option value="Rugby">Rugby</option>
+                <option value="Volleyball">Volleyball</option>
+                <option value="Golf">Golf</option>
+            </select>
+
+            <select id="sizeFilter">
+                <option value="">All Sizes</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+
+            <select id="genderFilter">
+                <option value="">All Genders</option>
+                <option value="Men">Male</option>
+                <option value="Women">Female</option>
+            </select>
+
+            <select id="sortBy">
+                <option value="">Sort By</option>
+                <option value="price-low-high">Price Low to High</option>
+                <option value="price-high-low">Price High to Low</option>
+                <option value="quantity-low-high">Quantity Low to High</option>
+                <option value="quantity-high-low">Quantity High to Low</option>
+            </select>
+
+            <button id="deleteSelected"><i class="fas fa-trash"></i> Delete Selected</button>
+        </div>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th>Image</th>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Sizes</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="inventoryTable">
+                <tr>
+                    <td><input type="checkbox" class="select-item"></td>
+                    <td><img src="Images/items/grey.jpg" alt="Basketball" class="product-image"></td>
+                    <td>101</td>
+                    <td>Basketball</td>
+                    <td>Basketball</td>
+                    <td>20</td>
+                    <td>N/A</td>
+                    <td>£29.99</td>
+                    <td><span class="status in-stock">In Stock</span></td>
+                    <td>Description of the item.</td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="select-item"></td>
+                    <td><img src="Images/items/grey.jpg" alt="Adidas Football" class="product-image"></td>
+                    <td>102</td>
+                    <td>Football</td>
+                    <td>Football</td>
+                    <td>5</td>
+                    <td>N/A</td>
+                    <td>£34.99</td>
+                    <td><span class="status low-stock">Low Stock</span></td>
+                    <td>Description of the item</td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="select-item"></td>
+                    <td><img src="Images/items/grey.jpg" alt="Golf Balls" class="product-image"></td>
+                    <td>103</td>
+                    <td>Golf Balls</td>
+                    <td>Golf</td>
+                    <td>12</td>
+                    <td>N/A</td>
+                    <td>£59.99</td>
+                    <td><span class="status in-stock">In Stock</span></td>
+                    <td>Description of the item</td>
+                    <td>
+                        <button class="edit"><i class="fas fa-edit"></i></button>
+                        <button class="delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="JS/inventory.js"></script>
+</body>
+
+</html>

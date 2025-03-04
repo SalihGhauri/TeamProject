@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user) {
         
-        $resetLink = "http://yourwebsite.com/reset-password-form.php?email=" . urlencode($email);
+        $resetLink = "https://cs2team10.cs2410-web01pvm.aston.ac.uk/resetpassform.php?email=" . urlencode($email);
         $subject = "Password Reset Request";
         $message = "Click the link below to reset your password:\n\n$resetLink";
         $headers = "From: tenteam010@gmail.com";
