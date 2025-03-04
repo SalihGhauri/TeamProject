@@ -87,32 +87,36 @@
                 <img src="Images/items/grey.jpg"  id="main_img" alt="">
             </div>
 
-            <div class="details">
-                <h1>Image Title </h1>
-                <p></p>
-                <p> Brief Dedsciption</p>
-    
-                <br>
-                <h3> price</h3>
-                <br>
-                <h3>Choose your size</h3>
-                <br>
-                <div class="size">
-                    <div class="psize">XS</div>
-                    <div class="psize">S</div>
-                    <div class="psize">M</div>
-                    <div class="psize">L</div>
-                    <div class="psize">XL</div>
-                    <div class="psize">XXL</div>
+            <form action="add_to_cart.php" method="POST">
+                <div class="details">
+                    <h1>Image Title</h1>
+                    <p>Brief Description</p>
+            
+                    <br>
+                    <h3>Price: <span>$XX.XX</span></h3>
+                    <br>
+                    <h3>Choose your size</h3>
+                    <br>
+                    <div class="size">
+                        <button type="button" class="size-btn" data-size="XS">XS</button><br>
+                        <button type="button" class="size-btn" data-size="S">S</button><br>
+                        <button type="button" class="size-btn" data-size="M">M</button><br>
+                        <button type="button" class="size-btn" data-size="L">L</button><br>
+                        <button type="button" class="size-btn" data-size="XL">XL</button><br>
+                        <button type="button" class="size-btn" data-size="XXL">XXL</button><br>
+                        <input type="hidden" name="size" id="selected-size" required>
+                    </div>                    
+                    <br>
+                    <div class="quantity">
+                        <p>Quantity</p>
+                        <input type="number" name="quantity" min="1" max="10" value="1" required>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn">Add to Basket</button><br>
+                    <button type="button" class="btn favorite-btn">Favourite</button>
                 </div>
-                <br>
-                <div class="quantity">
-                    <p>Quantity</p>
-                    <input type="number" min="1" max="10" value="1">
-                </div>
-                <button class="btn">Add to Basket </button><br>
-                <button class="btn">Favourite     </button>
-            </div>
+            </form>
+            
 
         </div>
 
