@@ -11,14 +11,14 @@
     font-size: 28px;
 }
 
-/* Dashboard Cards */
 .dashboard-cards {
     display: flex;
     justify-content: flex-start; 
     gap: 30px; 
-    margin-bottom: 25px; 
-    flex-wrap: wrap; 
+    margin-bottom: 25px;
+    flex-wrap: wrap;
 }
+
 
 .card {
     display: flex;
@@ -26,7 +26,7 @@
     background-color: #1c252b;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 220px;
     height: 100px;
     color: white;
     text-align: left;
@@ -64,7 +64,7 @@
     color: #ccc;
 }
 
-/* Inventory Controls - Filters */
+
 .inventory-controls {
     display: flex;
     gap: 10px;
@@ -113,7 +113,6 @@ tr:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Product Image */
 .product-image {
     width: 50px;
     height: 50px;
@@ -122,7 +121,6 @@ tr:hover {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Stock Status */
 .status {
     padding: 5px 10px;
     border-radius: 5px;
@@ -130,7 +128,6 @@ tr:hover {
     display: inline-block;
 }
 
-/* Status Colors */
 .in-stock {
     background-color: #2ecc71;
     color: white;

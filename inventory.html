@@ -27,19 +27,18 @@
         </div>
     </div>
 
-    <!-- Main Content -->
     <div class="main-content">
         <h1>Inventory Management</h1>
 
-        <!-- Dashboard Cards -->
         <div class="dashboard-cards">
             <div class="card">
                 <i class="fas fa-box"></i>
                 <div class="card-content">
-                    <h2 id="totalProducts">120</h2>
+                    <h2 id="totalProducts">45</h2>
                     <p>Total Products</p>
                 </div>
             </div>
+
             <div class="card warning">
                 <i class="fas fa-exclamation-triangle"></i>
                 <div class="card-content">
@@ -47,6 +46,7 @@
                     <p>Low Stock</p>
                 </div>
             </div>
+
             <div class="card danger">
                 <i class="fas fa-times-circle"></i>
                 <div class="card-content">
@@ -54,13 +54,20 @@
                     <p>Out of Stock</p>
                 </div>
             </div>
+
+            <div class="card">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="card-content">
+                    <h2 id="totalOrders">3</h2>
+                    <p>Total Orders Processed</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Search & Bulk Actions -->
+
         <div class="inventory-controls">
             <input type="text" id="searchBar" placeholder="Search inventory...">
-        
-            <!-- Category Filter -->
+
             <select id="categoryFilter">
                 <option value="">All Categories</option>
                 <option value="Basketball">Basketball</option>
@@ -69,8 +76,7 @@
                 <option value="Volleyball">Volleyball</option>
                 <option value="Golf">Golf</option>
             </select>
-        
-            <!-- Size Filter -->
+
             <select id="sizeFilter">
                 <option value="">All Sizes</option>
                 <option value="XS">XS</option>
@@ -79,15 +85,13 @@
                 <option value="L">L</option>
                 <option value="XL">XL</option>
             </select>
-        
-            <!-- Gender Filter -->
+
             <select id="genderFilter">
                 <option value="">All Genders</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
+                <option value="Men">Male</option>
+                <option value="Women">Female</option>
             </select>
-        
-            <!-- Sort By -->
+
             <select id="sortBy">
                 <option value="">Sort By</option>
                 <option value="price-low-high">Price Low to High</option>
@@ -95,11 +99,11 @@
                 <option value="quantity-low-high">Quantity Low to High</option>
                 <option value="quantity-high-low">Quantity High to Low</option>
             </select>
-        
+
             <button id="deleteSelected"><i class="fas fa-trash"></i> Delete Selected</button>
         </div>
-        
-                
+
+
         <table>
             <thead>
                 <tr>
@@ -167,7 +171,7 @@
                 </tr>
             </tbody>
         </table>
-        
+
     </div>
 
     <script src="JS/inventory.js"></script>
