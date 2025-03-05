@@ -8,8 +8,9 @@ body{
 }
 
 .container{
-    width: 80%;
-    margin: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .contact-box{
@@ -22,11 +23,16 @@ body{
     overflow: hidden;
     outline: 1px solid transparent;
     transform: translateZ(0);
+    width: 100%;
+    width: 1200px;
+    height: 500px;
 }
 
 .contact-left{
     padding: 40px 60px;
     flex-basis: 40%;
+    width: 900px;
+    width: 100%;
 }
 
 .contact-right{
@@ -43,9 +49,12 @@ h1{
 }
 
 .container p{
+    
     margin-bottom: 10px;
     margin-top: 0px;
 }
+
+
 
 label {
     display: block; 
@@ -54,14 +63,15 @@ label {
 }
 
 input{
-    width: 70%;
+    width: 100%;
 }
 
 textarea{
     width: 100%;
-    border: 1px solic #ccc;
+    border: 1px solid #ccc;
     outline: none;
     padding: 10px;
+    height: 200px;
 }
 
 tr td{
