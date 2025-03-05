@@ -40,8 +40,4 @@ $email = filter_var($_GET['email'], FILTER_SANITIZE_EMAIL);
     } catch (PDOException $e) {
         die("Error: " . $e->getMessage());
     }
-} else {
-    echo "No email provided.";
-    exit;
-}
 ?>
