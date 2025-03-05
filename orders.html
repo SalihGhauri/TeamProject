@@ -26,6 +26,7 @@
         </div>
     </div>
     <div class ="main-container">
+        <br>
         <div class="search-container">
           <form action="/action_page.php">
             <input type="text" placeholder="Search.." name="search">
@@ -33,8 +34,22 @@
                 <img class="icon" src="Icons/search.svg" alt="SEARCH">
             </button>
           </form>
+          <br>
+            <select id="sortby">
+                <option value="">Sort By</option>
+                <option value="price-low-high">Price Low to High</option>
+                <option value="price-high-low">Price High to Low</option>
+            </select>
+            <select id="sortstatus">
+                <option value="">all orders</option>
+                <option value="price-low-high">completed</option>
+                <option value="price-high-low">shipping</option>
+            </select>
+            <br>
         </div>
+        
         <div class ="table-container">
+            <br>
             <table class="styled-table">
             <thead>
                 <tr>
@@ -53,6 +68,7 @@
                     <td>Complete</td>
                     <td>Linus</td>
                     <td>£200</td>
+                    <td><button class="upbutton">view details</button></td>
                 </tr>
                 <tr class="active-row">
                     <td>2</td>
@@ -60,6 +76,7 @@
                     <td>Shipping</td>
                     <td>Steve</td>
                     <td>£25</td>
+                    <td><button class ="upbutton">view details</button></td>
                 </tr>
                 <!-- and so on... -->
             </tbody>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order details</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/sideheader.css">
+    <link rel="stylesheet" href="CSS/orderinspect.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-title">order details</h2>
+        <div class="menu">
+            <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="inventory.html"><i class="fas fa-box"></i> Inventory</a>
+            <a href="#"><i class="fas fa-users"></i> Customers</a>
+            <a href="orders.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+            <a href="#"><i class="fas fa-chart-line"></i> Report</a>
+        </div>
+        <div class="bottom-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="order-summary">
+            <h1>Order ID:
+                <br>
+                Customer:
+            </h1>
+    
+            <div class="order-items">
+                <div class="item">
+                    <span class="item-name">football</span>
+                    <span class="item-quantity">x2</span>
+                    <span class="item-price">£10.00</span>
+                </div>
+    
+                <div class="item">
+                    <span class="item-name">football boots</span>
+                    <span class="item-quantity">x1</span>
+                    <span class="item-price">£20.00</span>
+                </div>
+    
+                <div class="item">
+                    <span class="item-name">football Shirt</span>
+                    <span class="item-quantity">x3</span>
+                    <span class="item-price">£15.00</span>
+                </div>
+            </div>
+    
+            <div class="total">
+                <div class="total-line">
+                    <span>Subtotal:</span>
+                    <span>£85.00</span>
+                </div>
+                <div class="total-line">
+                    <span>Shipping:</span>
+                    <span>£5.00</span>
+                </div>
+                <div class="total-line">
+                    <span><strong>Total:</strong></span>
+                    <span><strong>£90.00</strong></span>
+                </div>
+            </div>
+            <select id="status">
+                <option value="">status</option>
+                <option value="shipping">shipping</option>
+                <option value="delivered">delivered</option>
+            </select>
+            <br>
+            <br>
+            <button class="update-btn">update</button>
+        </div>
+    </div>           
+</body>
+</html>
