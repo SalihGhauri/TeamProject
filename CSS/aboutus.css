@@ -5,19 +5,21 @@
     box-sizing: border-box;
 }
 
+
 .about{
     width: 100%;
-    padding: 78px 0px;
+    padding: 100px 0px;
     background-color: #ffffff;
 }
 
 .about img{
     height: auto;
-    width: 420px;
+    width: 700px;
+    padding-right: 50px;
 }
 
 .about-text{
-    width: 550px;
+    width: 600px;
 }
 
 .main{
@@ -31,7 +33,7 @@
 
 .about-text h1{
     color: #af1212;
-    font-size: 80px;
+    font-size: 100px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }

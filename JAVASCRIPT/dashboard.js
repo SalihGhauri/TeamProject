@@ -18,8 +18,21 @@ const trafficChart = new Chart(document.getElementById('trafficChart'), {
     data: {
         labels: ['Football', 'Rugby', 'Golf', 'Volleyball', 'Basketball'],
         datasets: [{
-            data: [30, 20, 15, 25, 10],
+            data: [20, 20, 20, 20, 20],
             backgroundColor: ['#64ffda', '#f39c12', '#e74c3c', '#3498db', '#9b59b6']
         }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'white', 
+                    font: {
+                        size: 14 
+                    },
+                    padding: 15 
+                }
+            }
+        }
     }
 });

@@ -1,11 +1,5 @@
 /* MAIN HEADER______ NAV BAR STYLING IMPORTED___________*/
 
-
-
-
-
-
-
 /* Text Slider Styling */
 .text_slider {
     width: 100%;
@@ -169,10 +163,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
     min-width: 100vh;
     background-color: #f4f4f9;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.slider-wrapper h2.best_selling {
+    margin-bottom: 10px; /* Reduced margin to pull the heading closer to images */
+}
+
+.slider-wrapper{
+    width: 100%;
 }
 
 .slider-wrapper .items_images{
@@ -182,9 +189,6 @@
     margin-bottom:80px;
     overflow-x: auto;
     scrollbar-width: none;
-    grid-template-columns: repeat(6,1fr);
-
-
 }
 
 .slider-wrapper .items_image::-webkit-scrollbar{
@@ -219,7 +223,6 @@
     height: 100%;
     width: 30%;
     background:black;
-    position: relative;
     border-radius: inherit;
     cursor: grab;
 }
@@ -236,6 +239,25 @@
     right: 0;
     top:-10px;
     bottom: -10px;
+}
+
+.item-info {
+    display: flex;          /* Use flexbox to align text vertically */
+    flex-direction: column; /* Stack description and price */
+    align-items: center;    /* Center align text */
+    margin-top: 10px;      /* Space between image and text */
+}
+
+.item-description {
+    font-size: 14px;       /* Ensure the font size is readable */
+    color: #333;           /* Set a color that contrasts with the background */
+    text-align: center;    /* Center text */
+}
+
+.item-price {
+    font-size: 16px;       /* Larger font size for price */
+    color: #d9534f;        /* Use a distinct color for the price */
+    font-weight: bold;     /* Bold for emphasis */
 }
 /* =================SECCTION 3 Discounts */
 
@@ -291,22 +313,25 @@
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    justify-content: center;
 }
 
 .discount-card{
     flex-shrink: 0;
-    width: 300px;
-    height: 200px;
+    width: 800px;
+    height: 170px;
     padding: 20px;
     border: 1px solid #ddd;
     border: radius 8px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
 .discount-card:hover{
@@ -318,6 +343,7 @@
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .discount-description{
@@ -327,14 +353,15 @@
 }
 
 .apply-discount-button{
-    padding:10px 20px;
+    padding:10px ;
     font-size: 1em;
     color: #fff;
     background-color: #af1212;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: auto;
+    margin-top: 17px;
+  
 }
 .apply-discount-button:hover{
     background-color: #af1212;
