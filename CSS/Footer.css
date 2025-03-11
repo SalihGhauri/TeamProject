@@ -1,76 +1,91 @@
-footer {
-  display: flex;
-  position: flex;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  padding: auto;
-  margin-top: 100px;
-  background-color: #af1212;
-  color: #ffffff;
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.footer-clean h4 {
-  margin: 0 0 12px;
-  font-weight: bold;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 8px;
   font-size: 16px;
 }
 
-.footer-clean ul {
-  padding: 0;
+.footer-section ul {
   list-style: none;
-  line-height: 1.6;
-  display: inline-block;
-  font-size: 14px;
+  padding: 0;
   margin: 0;
-  column-count: 1;
 }
 
-.footer-clean ul a {
-  color: inherit;
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  color: #fff;
   text-decoration: none;
-  opacity: 0.8;
+  transition: color 0.3s;
 }
 
-.footer-clean ul a:hover {
-  opacity: 1;
+.footer-section ul li a:hover {
+  color: #ddd;
 }
 
-.footer-clean .item.social {
-  text-align: center;
-  margin-top: 20px;
+.payment-icons {
+  margin-top: 10px;
 }
 
-.footer-clean .item.social>a {
-  font-size: 24px;
+.payment-icons img {
+  margin: 0 5px;
   width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  margin: 0 10px;
-  color: inherit;
-  opacity: 1;
-  border-radius: 100%;
-  background-color: #af1212;
-  transition: opacity 0.3s ease, background-color 0.3s ease;
+  height: auto;
 }
 
-.footer-clean .item.social>a:hover {
-  opacity: 0.9;
-  background-color: #FF6B6B;
+.social-icons {
+  margin-top: 10px;
 }
 
-.footer-clean .copyright {
-  margin: 14px 0 0;
-  font-size: 13px;
-  opacity: 0.6;
+.social-icons a {
+  margin: 0 5px;
+  color: #8b1919;
+  font-size: 24px;
+  transition: color 0.3s;
+  text-decoration: none;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: border-box;
+.social-icons a:hover {
+  color: #9e1111;
+}
+
+.footer-section.map iframe {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  border: none;
+}
+
+.footer-section.map small a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section.map small a:hover {
+  color: #ddd;
 }
