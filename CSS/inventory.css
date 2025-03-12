@@ -19,7 +19,6 @@
     flex-wrap: wrap;
 }
 
-
 .card {
     display: flex;
     align-items: center;
@@ -64,14 +63,20 @@
     color: #ccc;
 }
 
-
 .inventory-controls {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-#searchBar, #categoryFilter, #sizeFilter, #genderFilter, #sortBy, #deleteSelected {
+.button-group{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#searchBar, #categoryFilter, #sizeFilter, #genderFilter, #sortBy, #deleteSelected, #addProduct {
     padding: 10px;
     border-radius: 5px;
     background-color: #2e3a42;
@@ -90,8 +95,16 @@
     background: #c0392b;
 }
 
+#addProduct {
+    background: #27ae60;
+    color: white;
+    cursor: pointer;
+}
 
-/* Table */
+#addProduct:hover {
+    background: #219150;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -150,7 +163,6 @@ tr:hover {
     color: white;
 }
 
-
 .floating-btn {
     position: fixed;
     bottom: 20px;
@@ -163,18 +175,115 @@ tr:hover {
 }
 
 .modal {
-    display: none;
+    display: none; 
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center;     
 }
 
 .modal-content {
-    background-color: #2e3a42;
+    background: #2e3a42;
     padding: 20px;
-    border-radius: 5px;
-    width: 400px;
+    border-radius: 15px; 
+    width: 350px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px; 
+    border: none;
+    background: #1c252b;
+    color: white;
+}
+
+#sizeCheckboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+#sizeCheckboxes label {
+    background: #1c252b;
+    padding: 8px;
+    border-radius: 10px; 
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#sizeCheckboxes input {
+    margin-right: 5px;
+}
+
+.modal-save {
+    width: 100%;
+    padding: 10px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal-save:hover {
+    background: #219150;
+}
+
+.delete-modal {
+    background: #1c252b;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    width: 45%;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.cancel-btn {
+    background: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.cancel-btn:hover {
+    background: #444;
 }
