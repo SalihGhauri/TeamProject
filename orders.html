@@ -12,7 +12,7 @@
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <h2 class="sidebar-title">Orders</h2>
+        <h2 class="sidebar-title">Admin Dashboard</h2>
         <div class="menu">
             <a href="admindashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
             <a href="#"><i class="fas fa-box"></i> Inventory</a>
@@ -27,6 +27,31 @@
     </div>
     <div class ="main-container">
         <br>
+        <h1>Orders</h1>
+        <br>
+        <div class="dashboard-cards">
+            <div class="card">
+                <i class="fas fa-box"></i>
+                <div class="card-content">
+                    <h2 id="totalProducts">10</h2>
+                    <p>Orders complete</p>
+                </div>
+            </div>
+            <div class="card warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="card-content">
+                    <h2 id="lowStock">5</h2>
+                    <p>Orders in delivery</p>
+                </div>
+            </div>
+            <div class="card danger">
+                <i class="fas fa-times-circle"></i>
+                <div class="card-content">
+                    <h2 id="outOfStock">2</h2>
+                    <p>Orders in processing</p>
+                </div>
+            </div>
+        </div>
         <div class="search-container">
           <form action="/action_page.php">
             <input type="text" placeholder="Search.." name="search">
@@ -40,6 +65,7 @@
                 <option value="price-low-high">Price Low to High</option>
                 <option value="price-high-low">Price High to Low</option>
             </select>
+
             <select id="sortstatus">
                 <option value="">all orders</option>
                 <option value="price-low-high">completed</option>
@@ -78,7 +104,6 @@
                     <td>£25</td>
                     <td><button class ="upbutton">view details</button></td>
                 </tr>
-                <!-- and so on... -->
             </tbody>
             </table>
         </div>
