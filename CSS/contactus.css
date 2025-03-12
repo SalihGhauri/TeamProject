@@ -8,6 +8,9 @@ body{
 }
 
 .container{
+    
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
@@ -24,7 +27,7 @@ body{
     outline: 1px solid transparent;
     transform: translateZ(0);
     width: 100%;
-    width: 1200px;
+    width: 1300px;
     height: 500px;
 }
 
@@ -80,13 +83,14 @@ tr td{
 
 button{
     background: #af1212;
-    width: 100px;
+    width: 130px;
+    font-size: 18px;
     border: none;
     outline: none;
     color: #fff;
-    height: 35px;
-    margin-top: 20px;
-    border-radius: 20px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 25px;
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
 }
 
