@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product </title>
-    
+
     <!-- CSS Linksheets -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="CSS/singleproduct.css">
 
 </head>
+
 <body>
     <main>
-         <!-- ===================TOP MAIN NAV BAR ============================== -->
-         <div id="main_header">
+        <!-- ===================TOP MAIN NAV BAR ============================== -->
+        <div id="main_header">
             <div class="header_container">
 
                 <!--LOGO --->
@@ -76,22 +77,22 @@
 
         <div class="card">
             <div class="small_images">
-                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
-                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
-                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
-                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
-                <img src="Images/items/grey.jpg" alt=""  onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt="" onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt="" onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt="" onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt="" onclick="click(this)"> <br>
+                <img src="Images/items/grey.jpg" alt="" onclick="click(this)"> <br>
             </div>
 
             <div class="main_image">
-                <img src="Images/items/grey.jpg"  id="main_img" alt="">
+                <img src="Images/items/grey.jpg" id="main_img" alt="">
             </div>
 
             <form action="add_to_cart.php" method="POST">
                 <div class="details">
                     <h1>Image Title</h1>
                     <p>Brief Description</p>
-            
+
                     <br>
                     <h3>Price: <span>$XX.XX</span></h3>
                     <br>
@@ -105,7 +106,7 @@
                         <button type="button" class="size-btn" data-size="XL">XL</button><br>
                         <button type="button" class="size-btn" data-size="XXL">XXL</button><br>
                         <input type="hidden" name="size" id="selected-size" required>
-                    </div>                    
+                    </div>
                     <br>
                     <div class="quantity">
                         <p>Quantity</p>
@@ -116,7 +117,7 @@
                     <button type="button" class="btn favorite-btn">Favourite</button>
                 </div>
             </form>
-            
+
 
         </div>
 
@@ -124,57 +125,72 @@
         <!--============================FOOTER==========================-->
 
 
-        <div class="footer-clean">
-            <footer>
-                <div class="container">
-                    <div class="columns">
-                        <p>
-                        <ul>
-                            <li>
-                                <h4>Support</h4>
-                            </li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Refund request</a></li>
-                            <li><a href="#">delivery information</a></li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h4>Account</h4>
-                            </li>
-                            <li><a href="#">manage account</a></li>
-                            <li><a href="#">Payment details</a></li>
-                            <li><a href="#">Purchase history</a></li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h4>Additional information</h4>
-                            </li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Terms of usee</a></li>
-                            <li><a href="#">Terms of sale</a></li>
-                        </ul>
-                        </p>
-                        </span>
-                        <div class="col-lg-3 item social"><a href="#"><img class="icon ion-social-facebook"
-                                    src="images/instagram.jpg" alt="insta"></i></a><a href="#"><img
-                                    class="icon ion-social-X" src="images/X.png" alt="X"></i></a><a href="#"><img
-                                    class="icon ion-social-snapchat" src="Images/youtube.png" alt="youtube"></i></a><a
-                                href="#"><img class="icon ion-social-instagram" src="Images/facebook.png"
-                                    alt="faceboo"></i></a>
-                            <p class="copyright">Sports are us © 2024</p>
-                        </div>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+                <div class="payment-icons">
+                    <img src="Images/Visa.webp" alt="Visa">
+                    <img src="Images/msastercard.png" alt="MasterCard">
+                    <img src="Images/klarna-logo-1.webp" alt="Klarna">
+                    <img src="Images/Paypal.jpeg" alt="PayPal">
+                </div>
+            </div>
 
-                    </div>
-            </footer>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Email Us</a></li>
+                    <li><a href="#">Call Us</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Additional Info</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section map">
+                <h4>Our Location</h4>
+                <iframe width="300" height="200" frameborder="0" style="border:0"
+                    src="https://www.bing.com/maps/embed?h=200&w=300&cp=52.486648~-1.890957&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+                    allowfullscreen>
+                </iframe>
+                <br>
+                <small>
+                    <a href="https://www.bing.com/maps?q=aston+university&FORM=HDRSC7&cp=52.486648%7E-1.890957&lvl=16.0"
+                        target="_blank">
+                        View larger map
+                    </a>
+                </small>
+            </div>
+        </div>
+        </footer>
         </div>
 
     </main>
 
     <script>
-        function click(newImg){
-            let getImg= document.getElementId("main_img");
-            getImg.src= newImg.src;
+        function click(newImg) {
+            let getImg = document.getElementId("main_img");
+            getImg.src = newImg.src;
         }
     </script>
 </body>
+
 </html>
