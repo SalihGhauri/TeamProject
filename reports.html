@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/sideheader.css">
+    <link rel="stylesheet" href="CSS/report.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-title">Admin Dashboard</h2>
+        <div class="menu">
+            <a href="admindashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="inventory.html"><i class="fas fa-box"></i> Inventory</a>
+            <a href="#"><i class="fas fa-users"></i> Customers</a>
+            <a href="orders.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+            <a href="reports.html" class="active"><i class="fas fa-chart-line"></i> Reports</a>
+        </div>
+        <div class="bottom-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Reports Dashboard</h1>
+        <div class="dashboard-cards">
+            <div class="card">
+                <i class="fas fa-chart-bar"></i>
+                <div class="card-content">
+                    <h2 id="totalSales">£15,250</h2>
+                    <p>Total Sales</p>
+                </div>
+            </div>
+
+            <div class="card success">
+                <i class="fas fa-arrow-up"></i>
+                <div class="card-content">
+                    <h2 id="incomingOrders">18</h2>
+                    <p>Incoming Orders</p>
+                </div>
+            </div>
+
+            <div class="card warning">
+                <i class="fas fa-arrow-down"></i>
+                <div class="card-content">
+                    <h2 id="outgoingOrders">12</h2>
+                    <p>Outgoing Orders</p>
+                </div>
+            </div>
+
+            <div class="card danger">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="card-content">
+                    <h2 id="lowStockItems">5</h2>
+                    <p>Low Stock Items</p>
+                </div>
+            </div>
+        </div>
+        <div class="report-controls">
+            <input type="text" id="searchBar" placeholder="Search reports...">
+
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Football">Football</option>
+                <option value="Rugby">Rugby</option>
+                <option value="Volleyball">Volleyball</option>
+                <option value="Golf">Golf</option>
+            </select>
+
+            <select id="sortBy">
+                <option value="">Sort By</option>
+                <option value="sales-high-low">Sales High to Low</option>
+                <option value="sales-low-high">Sales Low to High</option>
+                <option value="most-orders">Most Orders</option>
+                <option value="least-orders">Least Orders</option>
+            </select>
+
+            <button id="generateReport"><i class="fas fa-file-alt"></i> Generate Report</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Stock Level</th>
+                    <th>Sold</th>
+                    <th>Revenue</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="reportsTable">
+                <tr>
+                    <td>101</td>
+                    <td>Basketball</td>
+                    <td>Basketball</td>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>£0.00</td>
+                    <td><span class="status in-stock">In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Football</td>
+                    <td>Football</td>
+                    <td>10</td>
+                    <td>22</td>
+                    <td>£0.00</td>
+                    <td><span class="status low-stock">Low Stock</span></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Golf</td>
+                    <td>Golf</td>
+                    <td>0</td>
+                    <td>50</td>
+                    <td>£0.00</td>
+                    <td><span class="status out-of-stock">Out of Stock</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
