@@ -178,6 +178,10 @@
     font-weight: 100;
 }
 
+a {
+    text-decoration: none;
+}
+
 .links-container ul {
     margin-top: 10px;
     list-style: none;
@@ -310,12 +314,23 @@
 .hide-2,
 .hide-3{
     opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 .photo-1:hover .hide-1,
 .photo-2:hover .hide-2,
 .photo-3:hover .hide-3{
     opacity: 1;
+}
+
+.photo-1:hover .background-1,
+.photo-2:hover .background-2,
+.photo-3:hover .background-3{
+    filter: blur(4px);
 }
 
 

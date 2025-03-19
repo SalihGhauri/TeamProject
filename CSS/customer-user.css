@@ -1,0 +1,121 @@
+/* ============General Styling============ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========Main Content Styling============= */
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.column {
+    width: 100%;
+    max-width: 100%;
+}
+
+.card {
+    background: #1c252b;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.card-header a {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 670px; 
+}
+
+
+.card-header h4 {
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+
+
+/* ===============Table Styling==================== */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;  
+}
+
+
+.table th:nth-child(1), .table td:nth-child(1) { width: 10%; }   /* ID Column */
+.table th:nth-child(2), .table td:nth-child(2) { width: 10%; }  /* Name Column */
+.table th:nth-child(3), .table td:nth-child(3) { width: 30%; }  /* Email Column */
+.table th:nth-child(4), .table td:nth-child(4) { width: 20%; }  /* Phone Column */
+.table th:nth-child(5), .table td:nth-child(5) { width: 30%; }  /* Action Column */
+
+
+.table th, .table td {
+    border: 2px solid #e0e0e0;
+    padding: 15px 10px; 
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px; 
+    color: white;
+}
+
+
+.table th {
+    background-color: #e0e0e0;
+    color:#1c252b;
+}
+
+
+
+/* Buttons Styling */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    justify-content: flex-end;
+}
+
+.btn-success:hover, .btn-danger:hover {
+    opacity: 0.8;
+}

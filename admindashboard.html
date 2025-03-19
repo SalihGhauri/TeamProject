@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/sideheader.css">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-title">Admin Dashboard</h2>
+        <div class="menu">
+            <a href="admindashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="inventory.html"><i class="fas fa-box"></i> Inventory</a>
+            <a href="users.html"><i class="fas fa-users"></i> Customers</a>
+            <a href="orders.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+            <a href="#"><i class="fas fa-chart-line"></i> Report</a>
+        </div>
+        <div class="bottom-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="top-section">
+            <div class="stats-card">
+                <h2>7</h2>
+                <p>Total Orders</p>
+                <span class="stat-change positive">0% ↑</span>
+            </div>
+            <div class="stats-card">
+                <h2>$538</h2>
+                <p>Revenue</p>
+                <span class="stat-change positive">0% ↑</span>
+            </div>
+            <div class="stats-card">
+                <h2>1</h2>
+                <p>New Customers</p>
+                <span class="stat-change positive">0% ↑</span>
+            </div>
+            <div class="stats-card">
+                <h2>12</h2>
+                <p>Products Sold</p>
+                <span class="stat-change positive">0% ↑</span>
+            </div>
+        </div>
+
+        <div class="chart-container full-width">
+            <div class="chart-box">
+                <h3>Revenue Overview</h3>
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-container small-chart centered-chart">
+            <div class="chart-box">
+                <h3>Traffic Source</h3>
+                <canvas id="trafficChart"></canvas>
+            </div>
+        </div>
+
+        <div class="recent-orders">
+            <h2>Top Selling Products</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Sales</th>
+                </tr>
+                <tr>
+                    <td>Football Shirt</td>
+                    <td>Football</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Football Shirt</td>
+                    <td>Football</td>
+                    <td>230</td>
+                </tr>
+                <tr>
+                    <td>Football Shirt</td>
+                    <td>Football</td>
+                    <td>175</td>
+                </tr>
+                <tr>
+                    <td>Football Shirt</td>
+                    <td>Football</td>
+                    <td>120</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="JAVASCRIPT/dashboard.js"></script>
+</body>
+
+</html>
