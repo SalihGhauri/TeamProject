@@ -26,26 +26,22 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   
-    // ========== Highlight low-stock statuses (optional) ==========
     document.querySelectorAll(".status").forEach(status => {
       if (status.innerText.includes("Low Stock")) {
         status.classList.add("low-stock");
       }
     });
   
-    // ========== Modal References ==========
     const editModal = document.getElementById("editProductModal");
     const closeEditModal = document.getElementById("closeEditModal");
     const editProductForm = document.getElementById("editProductForm");
   
     let selectedRow = null;
   
-    // ========== Open Edit Modal ==========
     document.querySelectorAll(".edit").forEach(button => {
       button.addEventListener("click", function () {
         selectedRow = this.closest("tr");
   
-        // Get values from the row
         let productName = selectedRow.cells[3].innerText;
         let productQuantity = selectedRow.cells[5].innerText;
         let productSizes = selectedRow.cells[6].innerText.split(", "); 
@@ -73,16 +69,13 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   
-    // ========== Handle "Save Changes" ==========
     editProductForm.addEventListener("submit", function (event) {
       event.preventDefault();
   
-      // Get updated values
       let updatedName = document.getElementById("editProductName").value;
       let updatedQuantity = document.getElementById("editProductQuantity").value;
       let updatedPrice = document.getElementById("editProductPrice").value;
   
-      // Collect selected sizes
       let updatedSizes = [];
       document.querySelectorAll("#sizeCheckboxes input:checked").forEach(checkbox => {
         updatedSizes.push(checkbox.value);
