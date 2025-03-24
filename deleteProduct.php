@@ -18,7 +18,7 @@ try {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-<!--when the form is submitted it will go to this page to process the logic of adding a user-->
+<!--when the form is submitted it will go to this page to process the logic of deleting a user-->
     <form action="deleteProductLogic.php" method="post">    
 <!--label for the forms-->
         <label for="product_ID">Product ID:</label>
