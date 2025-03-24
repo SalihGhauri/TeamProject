@@ -56,6 +56,8 @@ function fetchBasketItems() {
     $stmt->execute([$user_id]);
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-
+if (!function_exists('getConnection')) {
+    die("ConnectDB.php was not loaded properly");
+}
 $basketItems = fetchBasketItems();
 ?>
