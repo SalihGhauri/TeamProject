@@ -43,7 +43,7 @@ if ($user && password_verify($password, $user['password'])) {
 
 //insted of redirecting, it sends a Json response 
 } catch(PDOException $e) {
-  echo json_encode(["status" => "error", "message" => "Database connection failed"])
+  echo json_encode(["status" => "error", "message" => "Database connection failed"]);
 }
 
 $conn = null;
